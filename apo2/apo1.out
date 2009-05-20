@@ -1,0 +1,429 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+ no time accumulated
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+  0.00      0.00     0.00       32     0.00     0.00  wxStringBase::~wxStringBase()
+  0.00      0.00     0.00       32     0.00     0.00  wxStringData::Unlock()
+  0.00      0.00     0.00       32     0.00     0.00  wxString::~wxString()
+  0.00      0.00     0.00       32     0.00     0.00  wxStringBase::GetStringData() const
+  0.00      0.00     0.00       32     0.00     0.00  wxStringData::IsEmpty() const
+  0.00      0.00     0.00       31     0.00     0.00  wxStringBase::wxStringBase(wchar_t const*)
+  0.00      0.00     0.00       31     0.00     0.00  wxString::wxString(wchar_t const*)
+  0.00      0.00     0.00       21     0.00     0.00  wxSize::wxSize(int, int)
+  0.00      0.00     0.00       17     0.00     0.00  wxGetTranslation(wchar_t const*, wchar_t const*)
+  0.00      0.00     0.00       13     0.00     0.00  wxPoint::wxPoint(int, int)
+  0.00      0.00     0.00       13     0.00     0.00  wxSizer::Add(wxSizerItem*)
+  0.00      0.00     0.00       13     0.00     0.00  wxListBase::GetCount() const
+  0.00      0.00     0.00        8     0.00     0.00  wxSizer::Add(wxWindow*, int, int, int, wxObject*)
+  0.00      0.00     0.00        5     0.00     0.00  wxEvtHandler::Connect(int, int, void (wxObject::*)(wxEvent&), wxObject*, wxEvtHandler*)
+  0.00      0.00     0.00        5     0.00     0.00  wxSizer::Add(wxSizer*, int, int, int, wxObject*)
+  0.00      0.00     0.00        5     0.00     0.00  wxObject::wxObject()
+  0.00      0.00     0.00        4     0.00     0.00  wxCheckBox::wxCheckBox(wxWindow*, int, wxString const&, wxPoint const&, wxSize const&, long, wxValidator const&, wxString const&)
+  0.00      0.00     0.00        4     0.00     0.00  wxCheckBoxBase::wxCheckBoxBase()
+  0.00      0.00     0.00        3     0.00     0.00  wxEventTableEntry::wxEventTableEntry(int const&, int, int, void (wxObject::*)(wxEvent&), wxObject*)
+  0.00      0.00     0.00        3     0.00     0.00  wxEventTableEntryBase::wxEventTableEntryBase(int, int, void (wxObject::*)(wxEvent&), wxObject*)
+  0.00      0.00     0.00        2     0.00     0.00  wxListBase::wxListBase(wxKeyType)
+  0.00      0.00     0.00        2     0.00     0.00  wxMenuBase::Append(wxMenuItem*)
+  0.00      0.00     0.00        2     0.00     0.00  wxMenuBase::wxMenuBase(long)
+  0.00      0.00     0.00        2     0.00     0.00  wxGDIObject::wxGDIObject()
+  0.00      0.00     0.00        2     0.00     0.00  wxButtonBase::wxButtonBase()
+  0.00      0.00     0.00        2     0.00     0.00  wxStringBase::Init()
+  0.00      0.00     0.00        2     0.00     0.00  wxStringBase::wxStringBase()
+  0.00      0.00     0.00        2     0.00     0.00  wxMenuItemList::wxMenuItemList(wxKeyType)
+  0.00      0.00     0.00        2     0.00     0.00  wxwxMenuItemListNode::wxwxMenuItemListNode(wxListBase*, wxwxMenuItemListNode*, wxwxMenuItemListNode*, wxMenuItem*, wxListKey const&)
+  0.00      0.00     0.00        2     0.00     0.00  wxPen::wxPen()
+  0.00      0.00     0.00        2     0.00     0.00  wxMenu::wxMenu(long)
+  0.00      0.00     0.00        2     0.00     0.00  wxButton::wxButton(wxWindow*, int, wxString const&, wxPoint const&, wxSize const&, long, wxValidator const&, wxString const&)
+  0.00      0.00     0.00        2     0.00     0.00  wxString::wxString()
+  0.00      0.00     0.00        1     0.00     0.00  global constructors keyed to _Z11wxCreateAppv
+  0.00      0.00     0.00        1     0.00     0.00  global constructors keyed to _Z11wxbuildinfo17wxbuildinfoformat
+  0.00      0.00     0.00        1     0.00     0.00  global constructors keyed to _ZN10Image_show16ID_STATICBITMAP5E
+  0.00      0.00     0.00        1     0.00     0.00  global constructors keyed to _ZN4hist8find_maxEv
+  0.00      0.00     0.00        1     0.00     0.00  global constructors keyed to _ZN9DEBUG_lut16ID_STATICBITMAP1E
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  wxArrayInt::wxArrayInt()
+  0.00      0.00     0.00        1     0.00     0.00  wxStatusBar::wxStatusBar(wxWindow*, int, long, wxString const&)
+  0.00      0.00     0.00        1     0.00     0.00  wxAppConsole::SetInitializerFunction(wxAppConsole* (*)())
+  0.00      0.00     0.00        1     0.00     0.00  wxArrayString::wxArrayString()
+  0.00      0.00     0.00        1     0.00     0.00  wxAppInitializer::wxAppInitializer(wxAppConsole* (*)())
+  0.00      0.00     0.00        1     0.00     0.00  apo1App::OnInit()
+  0.00      0.00     0.00        1     0.00     0.00  apo1App::apo1App()
+  0.00      0.00     0.00        1     0.00     0.00  wxFrame::wxFrame()
+  0.00      0.00     0.00        1     0.00     0.00  wxImage::wxImage()
+  0.00      0.00     0.00        1     0.00     0.00  wxPanel::wxPanel(wxWindow*, int, wxPoint const&, wxSize const&, long, wxString const&)
+  0.00      0.00     0.00        1     0.00     0.00  wxString::operator=(wxString const&)
+  0.00      0.00     0.00        1     0.00     0.00  apo1Frame::apo1Frame(wxWindow*, int)
+  0.00      0.00     0.00        1     0.00     0.00  wxAppBase::SetTopWindow(wxWindow*)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) no time propagated
+
+index % time    self  children    called     name
+                0.00    0.00      32/32          wxString::~wxString() [9]
+[7]      0.0    0.00    0.00      32         wxStringBase::~wxStringBase() [7]
+                0.00    0.00      32/32          wxStringBase::GetStringData() const [10]
+                0.00    0.00      32/32          wxStringData::Unlock() [8]
+-----------------------------------------------
+                0.00    0.00      32/32          wxStringBase::~wxStringBase() [7]
+[8]      0.0    0.00    0.00      32         wxStringData::Unlock() [8]
+                0.00    0.00      32/32          wxStringData::IsEmpty() const [11]
+-----------------------------------------------
+                0.00    0.00       1/32          apo1Frame::OnButton1Click(wxCommandEvent&) [196]
+                0.00    0.00      31/32          apo1Frame::apo1Frame(wxWindow*, int) [61]
+[9]      0.0    0.00    0.00      32         wxString::~wxString() [9]
+                0.00    0.00      32/32          wxStringBase::~wxStringBase() [7]
+-----------------------------------------------
+                0.00    0.00      32/32          wxStringBase::~wxStringBase() [7]
+[10]     0.0    0.00    0.00      32         wxStringBase::GetStringData() const [10]
+-----------------------------------------------
+                0.00    0.00      32/32          wxStringData::Unlock() [8]
+[11]     0.0    0.00    0.00      32         wxStringData::IsEmpty() const [11]
+-----------------------------------------------
+                0.00    0.00      31/31          wxString::wxString(wchar_t const*) [13]
+[12]     0.0    0.00    0.00      31         wxStringBase::wxStringBase(wchar_t const*) [12]
+-----------------------------------------------
+                0.00    0.00      31/31          apo1Frame::apo1Frame(wxWindow*, int) [61]
+[13]     0.0    0.00    0.00      31         wxString::wxString(wchar_t const*) [13]
+                0.00    0.00      31/31          wxStringBase::wxStringBase(wchar_t const*) [12]
+-----------------------------------------------
+                0.00    0.00       1/21          apo1Frame::apo1Frame(wxWindow*, int) [61]
+                0.00    0.00       8/21          wxWindowBase::GetMinSize() const [218]
+                0.00    0.00      12/21          wxWindowBase::GetMaxSize() const [217]
+[14]     0.0    0.00    0.00      21         wxSize::wxSize(int, int) [14]
+-----------------------------------------------
+                0.00    0.00      17/17          apo1Frame::apo1Frame(wxWindow*, int) [61]
+[15]     0.0    0.00    0.00      17         wxGetTranslation(wchar_t const*, wchar_t const*) [15]
+-----------------------------------------------
+                0.00    0.00      13/13          wxFrame::GetClientAreaOrigin() const [251]
+[16]     0.0    0.00    0.00      13         wxPoint::wxPoint(int, int) [16]
+-----------------------------------------------
+                0.00    0.00       5/13          wxSizer::Add(wxSizer*, int, int, int, wxObject*) [21]
+                0.00    0.00       8/13          wxSizer::Add(wxWindow*, int, int, int, wxObject*) [19]
+[17]     0.0    0.00    0.00      13         wxSizer::Add(wxSizerItem*) [17]
+                0.00    0.00      13/13          wxListBase::GetCount() const [18]
+-----------------------------------------------
+                0.00    0.00      13/13          wxSizer::Add(wxSizerItem*) [17]
+[18]     0.0    0.00    0.00      13         wxListBase::GetCount() const [18]
+-----------------------------------------------
+                0.00    0.00       8/8           apo1Frame::apo1Frame(wxWindow*, int) [61]
+[19]     0.0    0.00    0.00       8         wxSizer::Add(wxWindow*, int, int, int, wxObject*) [19]
+                0.00    0.00       8/13          wxSizer::Add(wxSizerItem*) [17]
+-----------------------------------------------
+                0.00    0.00       5/5           apo1Frame::apo1Frame(wxWindow*, int) [61]
+[20]     0.0    0.00    0.00       5         wxEvtHandler::Connect(int, int, void (wxObject::*)(wxEvent&), wxObject*, wxEvtHandler*) [20]
+-----------------------------------------------
+                0.00    0.00       5/5           apo1Frame::apo1Frame(wxWindow*, int) [61]
+[21]     0.0    0.00    0.00       5         wxSizer::Add(wxSizer*, int, int, int, wxObject*) [21]
+                0.00    0.00       5/13          wxSizer::Add(wxSizerItem*) [17]
+-----------------------------------------------
+                0.00    0.00       1/5           wxImage::wxImage() [58]
+                0.00    0.00       2/5           wxGDIObject::wxGDIObject() [30]
+                0.00    0.00       2/5           wxListBase::wxListBase(wxKeyType) [27]
+[22]     0.0    0.00    0.00       5         wxObject::wxObject() [22]
+-----------------------------------------------
+                0.00    0.00       4/4           apo1Frame::apo1Frame(wxWindow*, int) [61]
+[23]     0.0    0.00    0.00       4         wxCheckBox::wxCheckBox(wxWindow*, int, wxString const&, wxPoint const&, wxSize const&, long, wxValidator const&, wxString const&) [23]
+                0.00    0.00       4/4           wxCheckBoxBase::wxCheckBoxBase() [24]
+-----------------------------------------------
+                0.00    0.00       4/4           wxCheckBox::wxCheckBox(wxWindow*, int, wxString const&, wxPoint const&, wxSize const&, long, wxValidator const&, wxString const&) [23]
+[24]     0.0    0.00    0.00       4         wxCheckBoxBase::wxCheckBoxBase() [24]
+-----------------------------------------------
+                0.00    0.00       1/3           __static_initialization_and_destruction_0(int, int) [45]
+                0.00    0.00       1/3           __static_initialization_and_destruction_0(int, int) [46]
+                0.00    0.00       1/3           __static_initialization_and_destruction_0(int, int) [48]
+[25]     0.0    0.00    0.00       3         wxEventTableEntry::wxEventTableEntry(int const&, int, int, void (wxObject::*)(wxEvent&), wxObject*) [25]
+                0.00    0.00       3/3           wxEventTableEntryBase::wxEventTableEntryBase(int, int, void (wxObject::*)(wxEvent&), wxObject*) [26]
+-----------------------------------------------
+                0.00    0.00       3/3           wxEventTableEntry::wxEventTableEntry(int const&, int, int, void (wxObject::*)(wxEvent&), wxObject*) [25]
+[26]     0.0    0.00    0.00       3         wxEventTableEntryBase::wxEventTableEntryBase(int, int, void (wxObject::*)(wxEvent&), wxObject*) [26]
+-----------------------------------------------
+                0.00    0.00       2/2           wxMenuItemList::wxMenuItemList(wxKeyType) [34]
+[27]     0.0    0.00    0.00       2         wxListBase::wxListBase(wxKeyType) [27]
+                0.00    0.00       2/5           wxObject::wxObject() [22]
+-----------------------------------------------
+                0.00    0.00       2/2           apo1Frame::apo1Frame(wxWindow*, int) [61]
+[28]     0.0    0.00    0.00       2         wxMenuBase::Append(wxMenuItem*) [28]
+-----------------------------------------------
+                0.00    0.00       2/2           wxMenu::wxMenu(long) [37]
+[29]     0.0    0.00    0.00       2         wxMenuBase::wxMenuBase(long) [29]
+                0.00    0.00       2/2           wxString::wxString() [39]
+                0.00    0.00       2/2           wxMenuItemList::wxMenuItemList(wxKeyType) [34]
+-----------------------------------------------
+                0.00    0.00       2/2           wxPen::wxPen() [36]
+[30]     0.0    0.00    0.00       2         wxGDIObject::wxGDIObject() [30]
+                0.00    0.00       2/5           wxObject::wxObject() [22]
+-----------------------------------------------
+                0.00    0.00       2/2           wxButton::wxButton(wxWindow*, int, wxString const&, wxPoint const&, wxSize const&, long, wxValidator const&, wxString const&) [38]
+[31]     0.0    0.00    0.00       2         wxButtonBase::wxButtonBase() [31]
+-----------------------------------------------
+                0.00    0.00       2/2           wxStringBase::wxStringBase() [33]
+[32]     0.0    0.00    0.00       2         wxStringBase::Init() [32]
+-----------------------------------------------
+                0.00    0.00       2/2           wxString::wxString() [39]
+[33]     0.0    0.00    0.00       2         wxStringBase::wxStringBase() [33]
+                0.00    0.00       2/2           wxStringBase::Init() [32]
+-----------------------------------------------
+                0.00    0.00       2/2           wxMenuBase::wxMenuBase(long) [29]
+[34]     0.0    0.00    0.00       2         wxMenuItemList::wxMenuItemList(wxKeyType) [34]
+                0.00    0.00       2/2           wxListBase::wxListBase(wxKeyType) [27]
+-----------------------------------------------
+                0.00    0.00       2/2           wxMenuItemList::CreateNode(wxNodeBase*, wxNodeBase*, void*, wxListKey const&) [127]
+[35]     0.0    0.00    0.00       2         wxwxMenuItemListNode::wxwxMenuItemListNode(wxListBase*, wxwxMenuItemListNode*, wxwxMenuItemListNode*, wxMenuItem*, wxListKey const&) [35]
+-----------------------------------------------
+                0.00    0.00       2/2           wxStatusBar::wxStatusBar(wxWindow*, int, long, wxString const&) [51]
+[36]     0.0    0.00    0.00       2         wxPen::wxPen() [36]
+                0.00    0.00       2/2           wxGDIObject::wxGDIObject() [30]
+-----------------------------------------------
+                0.00    0.00       2/2           apo1Frame::apo1Frame(wxWindow*, int) [61]
+[37]     0.0    0.00    0.00       2         wxMenu::wxMenu(long) [37]
+                0.00    0.00       2/2           wxMenuBase::wxMenuBase(long) [29]
+-----------------------------------------------
+                0.00    0.00       2/2           apo1Frame::apo1Frame(wxWindow*, int) [61]
+[38]     0.0    0.00    0.00       2         wxButton::wxButton(wxWindow*, int, wxString const&, wxPoint const&, wxSize const&, long, wxValidator const&, wxString const&) [38]
+                0.00    0.00       2/2           wxButtonBase::wxButtonBase() [31]
+-----------------------------------------------
+                0.00    0.00       2/2           wxMenuBase::wxMenuBase(long) [29]
+[39]     0.0    0.00    0.00       2         wxString::wxString() [39]
+                0.00    0.00       2/2           wxStringBase::wxStringBase() [33]
+-----------------------------------------------
+                0.00    0.00       1/1           __do_global_ctors_aux [263]
+[40]     0.0    0.00    0.00       1         global constructors keyed to _Z11wxCreateAppv [40]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [47]
+-----------------------------------------------
+                0.00    0.00       1/1           __do_global_ctors_aux [263]
+[41]     0.0    0.00    0.00       1         global constructors keyed to _Z11wxbuildinfo17wxbuildinfoformat [41]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [48]
+-----------------------------------------------
+                0.00    0.00       1/1           __do_global_ctors_aux [263]
+[42]     0.0    0.00    0.00       1         global constructors keyed to _ZN10Image_show16ID_STATICBITMAP5E [42]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [46]
+-----------------------------------------------
+                0.00    0.00       1/1           __do_global_ctors_aux [263]
+[43]     0.0    0.00    0.00       1         global constructors keyed to _ZN4hist8find_maxEv [43]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [49]
+-----------------------------------------------
+                0.00    0.00       1/1           __do_global_ctors_aux [263]
+[44]     0.0    0.00    0.00       1         global constructors keyed to _ZN9DEBUG_lut16ID_STATICBITMAP1E [44]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [45]
+-----------------------------------------------
+                0.00    0.00       1/1           global constructors keyed to _ZN9DEBUG_lut16ID_STATICBITMAP1E [44]
+[45]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [45]
+                0.00    0.00       1/3           wxEventTableEntry::wxEventTableEntry(int const&, int, int, void (wxObject::*)(wxEvent&), wxObject*) [25]
+-----------------------------------------------
+                0.00    0.00       1/1           global constructors keyed to _ZN10Image_show16ID_STATICBITMAP5E [42]
+[46]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [46]
+                0.00    0.00       1/3           wxEventTableEntry::wxEventTableEntry(int const&, int, int, void (wxObject::*)(wxEvent&), wxObject*) [25]
+-----------------------------------------------
+                0.00    0.00       1/1           global constructors keyed to _Z11wxCreateAppv [40]
+[47]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [47]
+                0.00    0.00       1/1           wxAppInitializer::wxAppInitializer(wxAppConsole* (*)()) [54]
+-----------------------------------------------
+                0.00    0.00       1/1           global constructors keyed to _Z11wxbuildinfo17wxbuildinfoformat [41]
+[48]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [48]
+                0.00    0.00       1/3           wxEventTableEntry::wxEventTableEntry(int const&, int, int, void (wxObject::*)(wxEvent&), wxObject*) [25]
+-----------------------------------------------
+                0.00    0.00       1/1           global constructors keyed to _ZN4hist8find_maxEv [43]
+[49]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [49]
+-----------------------------------------------
+                0.00    0.00       1/1           wxStatusBar::wxStatusBar(wxWindow*, int, long, wxString const&) [51]
+[50]     0.0    0.00    0.00       1         wxArrayInt::wxArrayInt() [50]
+-----------------------------------------------
+                0.00    0.00       1/1           apo1Frame::apo1Frame(wxWindow*, int) [61]
+[51]     0.0    0.00    0.00       1         wxStatusBar::wxStatusBar(wxWindow*, int, long, wxString const&) [51]
+                0.00    0.00       2/2           wxPen::wxPen() [36]
+                0.00    0.00       1/1           wxArrayString::wxArrayString() [53]
+                0.00    0.00       1/1           wxArrayInt::wxArrayInt() [50]
+-----------------------------------------------
+                0.00    0.00       1/1           wxAppInitializer::wxAppInitializer(wxAppConsole* (*)()) [54]
+[52]     0.0    0.00    0.00       1         wxAppConsole::SetInitializerFunction(wxAppConsole* (*)()) [52]
+-----------------------------------------------
+                0.00    0.00       1/1           wxStatusBar::wxStatusBar(wxWindow*, int, long, wxString const&) [51]
+[53]     0.0    0.00    0.00       1         wxArrayString::wxArrayString() [53]
+-----------------------------------------------
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [47]
+[54]     0.0    0.00    0.00       1         wxAppInitializer::wxAppInitializer(wxAppConsole* (*)()) [54]
+                0.00    0.00       1/1           wxAppConsole::SetInitializerFunction(wxAppConsole* (*)()) [52]
+-----------------------------------------------
+                0.00    0.00       1/1           wxAppConsole::CallOnInit() [80]
+[55]     0.0    0.00    0.00       1         apo1App::OnInit() [55]
+                0.00    0.00       1/1           apo1Frame::apo1Frame(wxWindow*, int) [61]
+                0.00    0.00       1/1           wxAppBase::SetTopWindow(wxWindow*) [62]
+-----------------------------------------------
+                0.00    0.00       1/1           wxCreateApp() [63]
+[56]     0.0    0.00    0.00       1         apo1App::apo1App() [56]
+-----------------------------------------------
+                0.00    0.00       1/1           apo1Frame::apo1Frame(wxWindow*, int) [61]
+[57]     0.0    0.00    0.00       1         wxFrame::wxFrame() [57]
+-----------------------------------------------
+                0.00    0.00       1/1           apo1Frame::apo1Frame(wxWindow*, int) [61]
+[58]     0.0    0.00    0.00       1         wxImage::wxImage() [58]
+                0.00    0.00       1/5           wxObject::wxObject() [22]
+-----------------------------------------------
+                0.00    0.00       1/1           apo1Frame::apo1Frame(wxWindow*, int) [61]
+[59]     0.0    0.00    0.00       1         wxPanel::wxPanel(wxWindow*, int, wxPoint const&, wxSize const&, long, wxString const&) [59]
+-----------------------------------------------
+                0.00    0.00       1/1           wxWindowBase::SetName(wxString const&) [119]
+[60]     0.0    0.00    0.00       1         wxString::operator=(wxString const&) [60]
+-----------------------------------------------
+                0.00    0.00       1/1           apo1App::OnInit() [55]
+[61]     0.0    0.00    0.00       1         apo1Frame::apo1Frame(wxWindow*, int) [61]
+                0.00    0.00      31/31          wxString::wxString(wchar_t const*) [13]
+                0.00    0.00      31/32          wxString::~wxString() [9]
+                0.00    0.00      17/17          wxGetTranslation(wchar_t const*, wchar_t const*) [15]
+                0.00    0.00       8/8           wxSizer::Add(wxWindow*, int, int, int, wxObject*) [19]
+                0.00    0.00       5/5           wxSizer::Add(wxSizer*, int, int, int, wxObject*) [21]
+                0.00    0.00       5/5           wxEvtHandler::Connect(int, int, void (wxObject::*)(wxEvent&), wxObject*, wxEvtHandler*) [20]
+                0.00    0.00       4/4           wxCheckBox::wxCheckBox(wxWindow*, int, wxString const&, wxPoint const&, wxSize const&, long, wxValidator const&, wxString const&) [23]
+                0.00    0.00       2/2           wxButton::wxButton(wxWindow*, int, wxString const&, wxPoint const&, wxSize const&, long, wxValidator const&, wxString const&) [38]
+                0.00    0.00       2/2           wxMenu::wxMenu(long) [37]
+                0.00    0.00       2/2           wxMenuBase::Append(wxMenuItem*) [28]
+                0.00    0.00       1/1           wxFrame::wxFrame() [57]
+                0.00    0.00       1/1           wxImage::wxImage() [58]
+                0.00    0.00       1/1           wxPanel::wxPanel(wxWindow*, int, wxPoint const&, wxSize const&, long, wxString const&) [59]
+                0.00    0.00       1/21          wxSize::wxSize(int, int) [14]
+                0.00    0.00       1/1           wxStatusBar::wxStatusBar(wxWindow*, int, long, wxString const&) [51]
+-----------------------------------------------
+                0.00    0.00       1/1           apo1App::OnInit() [55]
+[62]     0.0    0.00    0.00       1         wxAppBase::SetTopWindow(wxWindow*) [62]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+
+Index by function name
+
+  [40] global constructors keyed to _Z11wxCreateAppv (apo1App.cpp) [31] wxButtonBase::wxButtonBase() [57] wxFrame::wxFrame()
+  [41] global constructors keyed to _Z11wxbuildinfo17wxbuildinfoformat (apo1Main.cpp) [20] wxEvtHandler::Connect(int, int, void (wxObject::*)(wxEvent&), wxObject*, wxEvtHandler*) [58] wxImage::wxImage()
+  [42] global constructors keyed to _ZN10Image_show16ID_STATICBITMAP5E (Image_show.cpp) [32] wxStringBase::Init() [59] wxPanel::wxPanel(wxWindow*, int, wxPoint const&, wxSize const&, long, wxString const&)
+  [43] global constructors keyed to _ZN4hist8find_maxEv (apo_lib.cpp) [12] wxStringBase::wxStringBase(wchar_t const*) [16] wxPoint::wxPoint(int, int)
+  [44] global constructors keyed to _ZN9DEBUG_lut16ID_STATICBITMAP1E (DEBUG_lut.cpp) [33] wxStringBase::wxStringBase() [17] wxSizer::Add(wxSizerItem*)
+  [15] wxGetTranslation(wchar_t const*, wchar_t const*) [7] wxStringBase::~wxStringBase() [19] wxSizer::Add(wxWindow*, int, int, int, wxObject*)
+  [45] __static_initialization_and_destruction_0(int, int) (DEBUG_lut.cpp) [8] wxStringData::Unlock() [21] wxSizer::Add(wxSizer*, int, int, int, wxObject*)
+  [46] __static_initialization_and_destruction_0(int, int) (Image_show.cpp) [53] wxArrayString::wxArrayString() [38] wxButton::wxButton(wxWindow*, int, wxString const&, wxPoint const&, wxSize const&, long, wxValidator const&, wxString const&)
+  [47] __static_initialization_and_destruction_0(int, int) (apo1App.cpp) [24] wxCheckBoxBase::wxCheckBoxBase() [22] wxObject::wxObject()
+  [48] __static_initialization_and_destruction_0(int, int) (apo1Main.cpp) [34] wxMenuItemList::wxMenuItemList(wxKeyType) [13] wxString::wxString(wchar_t const*)
+  [49] __static_initialization_and_destruction_0(int, int) (apo_lib.cpp) [54] wxAppInitializer::wxAppInitializer(wxAppConsole* (*)()) [39] wxString::wxString()
+  [50] wxArrayInt::wxArrayInt() [25] wxEventTableEntry::wxEventTableEntry(int const&, int, int, void (wxObject::*)(wxEvent&), wxObject*) [9] wxString::~wxString()
+  [23] wxCheckBox::wxCheckBox(wxWindow*, int, wxString const&, wxPoint const&, wxSize const&, long, wxValidator const&, wxString const&) [35] wxwxMenuItemListNode::wxwxMenuItemListNode(wxListBase*, wxwxMenuItemListNode*, wxwxMenuItemListNode*, wxMenuItem*, wxListKey const&) [60] wxString::operator=(wxString const&)
+  [27] wxListBase::wxListBase(wxKeyType) [26] wxEventTableEntryBase::wxEventTableEntryBase(int, int, void (wxObject::*)(wxEvent&), wxObject*) [61] apo1Frame::apo1Frame(wxWindow*, int)
+  [28] wxMenuBase::Append(wxMenuItem*) [36] wxPen::wxPen() [62] wxAppBase::SetTopWindow(wxWindow*)
+  [29] wxMenuBase::wxMenuBase(long) [37] wxMenu::wxMenu(long) [18] wxListBase::GetCount() const
+  [30] wxGDIObject::wxGDIObject() [14] wxSize::wxSize(int, int) [10] wxStringBase::GetStringData() const
+  [51] wxStatusBar::wxStatusBar(wxWindow*, int, long, wxString const&) [55] apo1App::OnInit() [11] wxStringData::IsEmpty() const
+  [52] wxAppConsole::SetInitializerFunction(wxAppConsole* (*)()) [56] apo1App::apo1App()

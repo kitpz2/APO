@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="Image_show">
+		<id_arg>0</id_arg>
+		<object class="wxBoxSizer" variable="BoxSizer1" member="no">
+			<object class="sizeritem">
+				<object class="wxScrolledWindow" name="ID_SCROLLEDWINDOW1" variable="ScrolledWindow1" member="yes">
+					<style>wxHSCROLL|wxVSCROLL|wxFULL_REPAINT_ON_RESIZE</style>
+					<object class="wxFlexGridSizer" variable="FlexGridSizer1" member="no">
+						<cols>1</cols>
+						<rows>3</rows>
+						<growablecols>0</growablecols>
+						<growablerows>0,1</growablerows>
+						<object class="sizeritem">
+							<object class="wxFlexGridSizer" variable="FlexGridSizer4" member="no">
+								<cols>3</cols>
+								<growablecols>0,1,2,3</growablecols>
+								<growablerows>0</growablerows>
+								<object class="sizeritem">
+									<object class="wxStaticBitmap" name="ID_STATICBITMAP5" variable="Obraz_po" member="yes">
+										<minsize>250,250</minsize>
+									</object>
+									<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<border>5</border>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxStaticBoxSizer" variable="StaticBoxSizer2" member="no">
+										<label>Histogram po</label>
+										<object class="sizeritem">
+											<object class="wxFlexGridSizer" variable="FlexGridSizer5" member="no">
+												<cols>3</cols>
+												<growablecols>0,1,2</growablecols>
+												<growablerows>0</growablerows>
+												<object class="sizeritem">
+													<object class="wxStaticBitmap" name="ID_STATICBITMAP6" variable="Hist_po_R" member="yes">
+														<minsize>256,256</minsize>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxStaticBitmap" name="ID_STATICBITMAP7" variable="Hist_po_G" member="yes" />
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxStaticBitmap" name="ID_STATICBITMAP8" variable="Hist_po_B" member="yes" />
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+											</object>
+											<flag>wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+									</object>
+									<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<border>5</border>
+									<option>1</option>
+								</object>
+							</object>
+							<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+							<border>5</border>
+							<option>1</option>
+						</object>
+						<object class="sizeritem">
+							<object class="wxFlexGridSizer" variable="FlexGridSizer2" member="no">
+								<cols>3</cols>
+								<growablecols>0,1,2,3</growablecols>
+								<growablerows>0</growablerows>
+								<object class="sizeritem">
+									<object class="wxStaticBitmap" name="ID_STATICBITMAP1" variable="Obraz_bmp" member="yes">
+										<minsize>250,250</minsize>
+									</object>
+									<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<border>5</border>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxStaticBoxSizer" variable="StaticBoxSizer1" member="no">
+										<label>Histogram oryginalny</label>
+										<object class="sizeritem">
+											<object class="wxFlexGridSizer" variable="FlexGridSizer3" member="no">
+												<cols>3</cols>
+												<growablecols>0,1,2</growablecols>
+												<growablerows>0</growablerows>
+												<object class="sizeritem">
+													<object class="wxStaticBitmap" name="ID_STATICBITMAP2" variable="Hist_R" member="yes">
+														<minsize>256,256</minsize>
+													</object>
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxStaticBitmap" name="ID_STATICBITMAP3" variable="Hist_G" member="yes" />
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxStaticBitmap" name="ID_STATICBITMAP4" variable="Hist_B" member="yes" />
+													<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+											</object>
+											<flag>wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+									</object>
+									<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<border>5</border>
+									<option>1</option>
+								</object>
+							</object>
+							<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+							<border>5</border>
+							<option>1</option>
+						</object>
+						<object class="sizeritem">
+							<object class="wxStaticText" name="ID_STATICTEXT2" variable="czas_wczyt" member="yes">
+								<label>Czas wczytywania: </label>
+							</object>
+							<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+							<border>5</border>
+							<option>1</option>
+						</object>
+						<object class="sizeritem">
+							<object class="wxStaticText" name="ID_STATICTEXT1" variable="czas" member="yes">
+								<label>Czas wykonywania: </label>
+							</object>
+							<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+							<border>5</border>
+							<option>1</option>
+						</object>
+						<object class="sizeritem">
+							<object class="wxButton" name="ID_BUTTON1" variable="Button1" member="yes">
+								<label>Zapisz Zmieniony obraz do pliku</label>
+								<handler function="OnButton1Click" entry="EVT_BUTTON" />
+							</object>
+							<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+							<border>5</border>
+							<option>1</option>
+						</object>
+					</object>
+				</object>
+				<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+		</object>
+		<object class="wxFileDialog" variable="FileDialog1" member="yes">
+			<message>Select file</message>
+			<style>wxFD_SAVE|wxFD_OVERWRITE_PROMPT</style>
+		</object>
+	</object>
+</wxsmith>

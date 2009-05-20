@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<BrowseTracker_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="DEBUG_lut.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="127" topLine="0" />
+		<BrowseMarks positions="" />
+		<Book_Marks positions="" />
+	</File>
+	<File name="DEBUG_lut.h" open="1" top="0" tabpos="6">
+		<Cursor position="53" topLine="0" />
+		<BrowseMarks positions="" />
+		<Book_Marks positions="" />
+	</File>
+	<File name="Image_show.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="8526" topLine="149" />
+		<BrowseMarks positions="8555,8555,9697,8941,8536" />
+		<Book_Marks positions="9042" />
+	</File>
+	<File name="Image_show.h" open="1" top="0" tabpos="2">
+		<Cursor position="79" topLine="0" />
+		<BrowseMarks positions="" />
+		<Book_Marks positions="" />
+	</File>
+	<File name="apo1App.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="408" topLine="12" />
+		<BrowseMarks positions="" />
+		<Book_Marks positions="" />
+	</File>
+	<File name="apo1Main.cpp" open="1" top="0" tabpos="9">
+		<Cursor position="8725" topLine="214" />
+		<BrowseMarks positions="" />
+		<Book_Marks positions="" />
+	</File>
+	<File name="apo1Main.h" open="1" top="0" tabpos="4">
+		<Cursor position="421" topLine="6" />
+	</File>
+	<File name="../apo_lib.cpp" open="1" top="0" tabpos="7">
+		<Cursor position="20755" topLine="804" />
+		<BrowseMarks positions="22153" />
+		<Book_Marks positions="" />
+	</File>
+	<File name="../apo_lib.hpp" open="1" top="0" tabpos="8">
+		<Cursor position="484" topLine="21" />
+		<BrowseMarks positions="" />
+		<Book_Marks positions="" />
+	</File>
+</BrowseTracker_layout_file>

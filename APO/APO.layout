@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="APOApp.h" open="1" top="0" tabpos="4">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="APOMain.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="8394" topLine="75" />
+	</File>
+	<File name="APOMain.h" open="1" top="0" tabpos="5">
+		<Cursor position="700" topLine="21" />
+	</File>
+	<File name="ImageShow.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="216" topLine="0" />
+	</File>
+	<File name="ImageShow.h" open="1" top="0" tabpos="3">
+		<Cursor position="358" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

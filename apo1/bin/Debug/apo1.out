@@ -1,0 +1,772 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 47.80      1.63     1.63       30    54.33    54.33  hist::create_histogram_table(wxImage&)
+ 34.60      2.81     1.18        5   236.00   236.00  IMG::HistogramEqualisation_3()
+ 10.26      3.16     0.35        4    87.50    87.50  IMG::HistogramEqualisation_wlasna()
+  4.40      3.31     0.15        4    37.50    37.50  IMG::HistogramEqualisation_1()
+  2.64      3.40     0.09        2    45.00    45.00  IMG::HistogramEqualisation_2()
+  0.29      3.41     0.01                             wxWindowBase::GetValidator()
+  0.00      3.41     0.00      574     0.00     0.00  wxStringBase::GetStringData() const
+  0.00      3.41     0.00      529     0.00     0.00  wxStringData::IsEmpty() const
+  0.00      3.41     0.00      514     0.00     0.00  wxStringBase::~wxStringBase()
+  0.00      3.41     0.00      514     0.00     0.00  wxStringData::Unlock()
+  0.00      3.41     0.00      514     0.00     0.00  wxString::~wxString()
+  0.00      3.41     0.00      436     0.00     0.00  wxStringBase::wxStringBase(wchar_t const*)
+  0.00      3.41     0.00      436     0.00     0.00  wxString::wxString(wchar_t const*)
+  0.00      3.41     0.00      381     0.00     0.00  wxSize::wxSize(int, int)
+  0.00      3.41     0.00      283     0.00     0.00  wxSizer::Add(wxSizerItem*)
+  0.00      3.41     0.00      283     0.00     0.00  wxListBase::GetCount() const
+  0.00      3.41     0.00      214     0.00     0.00  wxPoint::wxPoint(int, int)
+  0.00      3.41     0.00      188     0.00     0.00  wxSizer::Add(wxWindow*, int, int, int, wxObject*)
+  0.00      3.41     0.00      182     0.00     0.00  wxGetTranslation(wchar_t const*, wchar_t const*)
+  0.00      3.41     0.00      146     0.00     0.00  wxObject::wxObject()
+  0.00      3.41     0.00       95     0.00     0.00  wxSizer::Add(wxSizer*, int, int, int, wxObject*)
+  0.00      3.41     0.00       90     0.00     0.00  wxStringBase::ConcatSelf(unsigned int, wchar_t const*)
+  0.00      3.41     0.00       83     0.00     0.00  wxGDIObject::wxGDIObject()
+  0.00      3.41     0.00       81     0.00     0.00  wxBitmapBase::wxBitmapBase()
+  0.00      3.41     0.00       81     0.00     0.00  wxBitmap::wxBitmap(wxImage const&, int)
+  0.00      3.41     0.00       60     0.00     0.00  wxStrlen(wchar_t const*)
+  0.00      3.41     0.00       60     0.00     0.00  wxStringBase::append(wchar_t const*)
+  0.00      3.41     0.00       60     0.00     0.00  data<unsigned long>::data(bool, unsigned long)
+  0.00      3.41     0.00       60     0.00     0.00  wxString::append(wchar_t const*)
+  0.00      3.41     0.00       60     0.00     0.00  wxString::operator<<(wchar_t const*)
+  0.00      3.41     0.00       48     0.00     0.00  wxImage::~wxImage()
+  0.00      3.41     0.00       48     0.00     0.00  wxObject::~wxObject()
+  0.00      3.41     0.00       45     0.00     0.00  wxStringBase::length() const
+  0.00      3.41     0.00       42     0.00     0.00  wxWindowBase::Hide()
+  0.00      3.41     0.00       31     0.00     0.00  wxImage::wxImage()
+  0.00      3.41     0.00       30     0.00     0.00  wxStringBase::append(wxStringBase const&)
+  0.00      3.41     0.00       30     0.00    27.17  IMG::DrawHistogram(wxStaticBitmap*, wxStaticBitmap*, wxStaticBitmap*)
+  0.00      3.41     0.00       30     0.00     0.00  hist::draw_histogram(wxStaticBitmap*, wxStaticBitmap*, wxStaticBitmap*)
+  0.00      3.41     0.00       30     0.00     0.00  hist::scale(unsigned long)
+  0.00      3.41     0.00       30     0.00     0.00  hist::find_max()
+  0.00      3.41     0.00       30     0.00    54.33  hist::hist(wxImage&)
+  0.00      3.41     0.00       30     0.00     0.00  wxImage::wxImage()
+  0.00      3.41     0.00       30     0.00     0.00  wxString::Clear()
+  0.00      3.41     0.00       30     0.00     0.00  wxString::append(wxString const&)
+  0.00      3.41     0.00       30     0.00     0.00  wxString::operator<<(wxString const&)
+  0.00      3.41     0.00       30     0.00     0.00  wxString::operator<<(double)
+  0.00      3.41     0.00       30     0.00     0.00  wxStringBase::c_str() const
+  0.00      3.41     0.00       26     0.00     0.00  int* std::max_element<int*>(int*, int*)
+  0.00      3.41     0.00       20     0.00     0.00  wxEvtHandler::Connect(int, int, void (wxObject::*)(wxEvent&), wxObject*, wxEvtHandler*)
+  0.00      3.41     0.00       20     0.00     0.00  wxCheckBoxBase::IsChecked() const
+  0.00      3.41     0.00       18     0.00     0.00  wxImage::operator=(wxImage const&)
+  0.00      3.41     0.00       18     0.00     0.00  wxObject::operator=(wxObject const&)
+  0.00      3.41     0.00       17     0.00     0.00  wxButtonBase::wxButtonBase()
+  0.00      3.41     0.00       17     0.00     0.00  wxStringBase::Init()
+  0.00      3.41     0.00       17     0.00     0.00  wxStringBase::wxStringBase()
+  0.00      3.41     0.00       17     0.00     0.00  wxButton::wxButton(wxWindow*, int, wxString const&, wxPoint const&, wxSize const&, long, wxValidator const&, wxString const&)
+  0.00      3.41     0.00       17     0.00     0.00  wxString::wxString()
+  0.00      3.41     0.00       16     0.00     0.00  wxFrame::wxFrame()
+  0.00      3.41     0.00       16     0.00     0.00  wxString::operator=(wxString const&)
+  0.00      3.41     0.00       15     0.00   226.67  Image_show::Image_show(wxString, wxImage&, wxString, char, wxWindow*, int, wxPoint const&, wxSize const&)
+  0.00      3.41     0.00       15     0.00     0.00  Dystrybuanta::Dystrybuanta(hist*)
+  0.00      3.41     0.00       15     0.00     0.00  wxStringBase::wxStringBase(wxStringBase const&)
+  0.00      3.41     0.00       15     0.00     0.00  wxStringData::Lock()
+  0.00      3.41     0.00       15     0.00     0.00  wxScrolledWindow::wxScrolledWindow(wxWindow*, int, wxPoint const&, wxSize const&, long, wxString const&)
+  0.00      3.41     0.00       15     0.00     0.00  wxScrollHelperNative::wxScrollHelperNative(wxWindow*)
+  0.00      3.41     0.00       15     0.00     0.00  IMG::oblicz_srednia_histogramu()
+  0.00      3.41     0.00       15     0.00    54.33  IMG::IMG(wxString)
+  0.00      3.41     0.00       15     0.00     0.00  IMG::IMG(unsigned long, unsigned long)
+  0.00      3.41     0.00       15     0.00     0.00  data<float>::data(bool, unsigned long)
+  0.00      3.41     0.00       15     0.00     0.00  wxPanel::wxPanel()
+  0.00      3.41     0.00       15     0.00     0.00  wxString::wxString(wxString const&)
+  0.00      3.41     0.00       15     0.00     0.00  wxStringBase::empty() const
+  0.00      3.41     0.00        4     0.00     0.00  wxCheckBox::wxCheckBox(wxWindow*, int, wxString const&, wxPoint const&, wxSize const&, long, wxValidator const&, wxString const&)
+  0.00      3.41     0.00        4     0.00     0.00  wxCheckBoxBase::wxCheckBoxBase()
+  0.00      3.41     0.00        4     0.00     0.00  IMG::CalculateLUT(char)
+  0.00      3.41     0.00        4     0.00     0.00  LUT::LUT(Dystrybuanta*, char)
+  0.00      3.41     0.00        4     0.00     0.00  data<unsigned char>::data(bool, unsigned long)
+  0.00      3.41     0.00        3     0.00     0.00  wxEventTableEntry::wxEventTableEntry(int const&, int, int, void (wxObject::*)(wxEvent&), wxObject*)
+  0.00      3.41     0.00        3     0.00     0.00  wxEventTableEntryBase::wxEventTableEntryBase(int, int, void (wxObject::*)(wxEvent&), wxObject*)
+  0.00      3.41     0.00        3     0.00     0.00  wxImage::Rescale(int, int, int)
+  0.00      3.41     0.00        2     0.00     0.00  wxListBase::wxListBase(wxKeyType)
+  0.00      3.41     0.00        2     0.00     0.00  wxMenuBase::Append(wxMenuItem*)
+  0.00      3.41     0.00        2     0.00     0.00  wxMenuBase::wxMenuBase(long)
+  0.00      3.41     0.00        2     0.00     0.00  wxMenuItemList::wxMenuItemList(wxKeyType)
+  0.00      3.41     0.00        2     0.00     0.00  wxwxMenuItemListNode::wxwxMenuItemListNode(wxListBase*, wxwxMenuItemListNode*, wxwxMenuItemListNode*, wxMenuItem*, wxListKey const&)
+  0.00      3.41     0.00        2     0.00     0.00  wxPen::wxPen()
+  0.00      3.41     0.00        2     0.00     0.00  wxMenu::wxMenu(long)
+  0.00      3.41     0.00        1     0.00     0.00  global constructors keyed to _Z11wxCreateAppv
+  0.00      3.41     0.00        1     0.00     0.00  global constructors keyed to _Z11wxbuildinfo17wxbuildinfoformat
+  0.00      3.41     0.00        1     0.00     0.00  global constructors keyed to _ZN10Image_show16ID_STATICBITMAP5E
+  0.00      3.41     0.00        1     0.00     0.00  global constructors keyed to _ZN4hist8find_maxEv
+  0.00      3.41     0.00        1     0.00     0.00  global constructors keyed to _ZN9DEBUG_lut16ID_STATICBITMAP1E
+  0.00      3.41     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      3.41     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      3.41     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      3.41     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      3.41     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      3.41     0.00        1     0.00     0.00  wxArrayInt::wxArrayInt()
+  0.00      3.41     0.00        1     0.00     0.00  wxStatusBar::wxStatusBar(wxWindow*, int, long, wxString const&)
+  0.00      3.41     0.00        1     0.00     0.00  wxAppConsole::SetInitializerFunction(wxAppConsole* (*)())
+  0.00      3.41     0.00        1     0.00     0.00  wxArrayString::wxArrayString()
+  0.00      3.41     0.00        1     0.00     0.00  wxAppInitializer::wxAppInitializer(wxAppConsole* (*)())
+  0.00      3.41     0.00        1     0.00     0.00  apo1App::OnInit()
+  0.00      3.41     0.00        1     0.00     0.00  apo1App::apo1App()
+  0.00      3.41     0.00        1     0.00     0.00  wxPanel::wxPanel(wxWindow*, int, wxPoint const&, wxSize const&, long, wxString const&)
+  0.00      3.41     0.00        1     0.00     0.00  apo1Frame::apo1Frame(wxWindow*, int)
+  0.00      3.41     0.00        1     0.00     0.00  wxAppBase::SetTopWindow(wxWindow*)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 0.29% of 3.41 seconds
+
+index % time    self  children    called     name
+                0.00    3.40      15/15          apo1Frame::OnButton2Click(wxCommandEvent&) [2]
+[1]     99.7    0.00    3.40      15         Image_show::Image_show(wxString, wxImage&, wxString, char, wxWindow*, int, wxPoint const&, wxSize const&) [1]
+                1.18    0.00       5/5           IMG::HistogramEqualisation_3() [5]
+                0.00    0.81      30/30          IMG::DrawHistogram(wxStaticBitmap*, wxStaticBitmap*, wxStaticBitmap*) [6]
+                0.00    0.81      15/15          IMG::IMG(wxString) [7]
+                0.35    0.00       4/4           IMG::HistogramEqualisation_wlasna() [8]
+                0.15    0.00       4/4           IMG::HistogramEqualisation_1() [9]
+                0.09    0.00       2/2           IMG::HistogramEqualisation_2() [10]
+                0.00    0.00     390/514         wxString::~wxString() [22]
+                0.00    0.00     360/436         wxString::wxString(wchar_t const*) [24]
+                0.00    0.00     180/188         wxSizer::Add(wxWindow*, int, int, int, wxObject*) [29]
+                0.00    0.00     150/182         wxGetTranslation(wchar_t const*, wchar_t const*) [30]
+                0.00    0.00      90/95          wxSizer::Add(wxSizer*, int, int, int, wxObject*) [32]
+                0.00    0.00      60/381         wxSize::wxSize(int, int) [25]
+                0.00    0.00      60/60          wxString::operator<<(wchar_t const*) [41]
+                0.00    0.00      30/31          wxImage::wxImage() [46]
+                0.00    0.00      30/81          wxBitmap::wxBitmap(wxImage const&, int) [36]
+                0.00    0.00      30/30          wxString::Clear() [52]
+                0.00    0.00      30/30          wxString::operator<<(double) [55]
+                0.00    0.00      15/16          wxFrame::wxFrame() [67]
+                0.00    0.00      15/15          wxScrolledWindow::wxScrolledWindow(wxWindow*, int, wxPoint const&, wxSize const&, long, wxString const&) [72]
+                0.00    0.00      15/17          wxButton::wxButton(wxWindow*, int, wxString const&, wxPoint const&, wxSize const&, long, wxValidator const&, wxString const&) [65]
+                0.00    0.00      15/20          wxEvtHandler::Connect(int, int, void (wxObject::*)(wxEvent&), wxObject*, wxEvtHandler*) [58]
+                0.00    0.00      15/17          wxString::wxString() [66]
+                0.00    0.00      15/15          wxString::wxString(wxString const&) [78]
+                0.00    0.00      15/18          wxImage::operator=(wxImage const&) [60]
+                0.00    0.00      15/48          wxImage::~wxImage() [42]
+-----------------------------------------------
+                                                 <spontaneous>
+[2]     99.7    0.00    3.40                 apo1Frame::OnButton2Click(wxCommandEvent&) [2]
+                0.00    3.40      15/15          Image_show::Image_show(wxString, wxImage&, wxString, char, wxWindow*, int, wxPoint const&, wxSize const&) [1]
+                0.00    0.00      30/514         wxString::~wxString() [22]
+                0.00    0.00      20/20          wxCheckBoxBase::IsChecked() const [59]
+                0.00    0.00      15/182         wxGetTranslation(wchar_t const*, wchar_t const*) [30]
+                0.00    0.00      15/436         wxString::wxString(wchar_t const*) [24]
+-----------------------------------------------
+                1.63    0.00      30/30          hist::hist(wxImage&) [4]
+[3]     47.8    1.63    0.00      30         hist::create_histogram_table(wxImage&) [3]
+                0.00    0.00      30/30          hist::scale(unsigned long) [49]
+-----------------------------------------------
+                0.00    0.81      15/30          IMG::IMG(wxString) [7]
+                0.00    0.81      15/30          IMG::DrawHistogram(wxStaticBitmap*, wxStaticBitmap*, wxStaticBitmap*) [6]
+[4]     47.8    0.00    1.63      30         hist::hist(wxImage&) [4]
+                1.63    0.00      30/30          hist::create_histogram_table(wxImage&) [3]
+                0.00    0.00      30/60          data<unsigned long>::data(bool, unsigned long) [39]
+-----------------------------------------------
+                1.18    0.00       5/5           Image_show::Image_show(wxString, wxImage&, wxString, char, wxWindow*, int, wxPoint const&, wxSize const&) [1]
+[5]     34.6    1.18    0.00       5         IMG::HistogramEqualisation_3() [5]
+                0.00    0.00      10/26          int* std::max_element<int*>(int*, int*) [57]
+                0.00    0.00       5/15          IMG::IMG(unsigned long, unsigned long) [75]
+-----------------------------------------------
+                0.00    0.81      30/30          Image_show::Image_show(wxString, wxImage&, wxString, char, wxWindow*, int, wxPoint const&, wxSize const&) [1]
+[6]     23.9    0.00    0.81      30         IMG::DrawHistogram(wxStaticBitmap*, wxStaticBitmap*, wxStaticBitmap*) [6]
+                0.00    0.81      15/30          hist::hist(wxImage&) [4]
+                0.00    0.00      30/30          hist::draw_histogram(wxStaticBitmap*, wxStaticBitmap*, wxStaticBitmap*) [48]
+-----------------------------------------------
+                0.00    0.81      15/15          Image_show::Image_show(wxString, wxImage&, wxString, char, wxWindow*, int, wxPoint const&, wxSize const&) [1]
+[7]     23.9    0.00    0.81      15         IMG::IMG(wxString) [7]
+                0.00    0.81      15/30          hist::hist(wxImage&) [4]
+                0.00    0.00      15/30          wxImage::wxImage() [51]
+                0.00    0.00      15/15          Dystrybuanta::Dystrybuanta(hist*) [69]
+                0.00    0.00      15/15          IMG::oblicz_srednia_histogramu() [74]
+-----------------------------------------------
+                0.35    0.00       4/4           Image_show::Image_show(wxString, wxImage&, wxString, char, wxWindow*, int, wxPoint const&, wxSize const&) [1]
+[8]     10.3    0.35    0.00       4         IMG::HistogramEqualisation_wlasna() [8]
+                0.00    0.00       4/4           IMG::CalculateLUT(char) [82]
+                0.00    0.00       4/15          IMG::IMG(unsigned long, unsigned long) [75]
+-----------------------------------------------
+                0.15    0.00       4/4           Image_show::Image_show(wxString, wxImage&, wxString, char, wxWindow*, int, wxPoint const&, wxSize const&) [1]
+[9]      4.4    0.15    0.00       4         IMG::HistogramEqualisation_1() [9]
+                0.00    0.00      12/26          int* std::max_element<int*>(int*, int*) [57]
+                0.00    0.00       4/15          IMG::IMG(unsigned long, unsigned long) [75]
+-----------------------------------------------
+                0.09    0.00       2/2           Image_show::Image_show(wxString, wxImage&, wxString, char, wxWindow*, int, wxPoint const&, wxSize const&) [1]
+[10]     2.6    0.09    0.00       2         IMG::HistogramEqualisation_2() [10]
+                0.00    0.00       4/26          int* std::max_element<int*>(int*, int*) [57]
+                0.00    0.00       2/15          IMG::IMG(unsigned long, unsigned long) [75]
+-----------------------------------------------
+                                                 <spontaneous>
+[11]     0.3    0.01    0.00                 wxWindowBase::GetValidator() [11]
+-----------------------------------------------
+                0.00    0.00      15/574         wxStringBase::wxStringBase(wxStringBase const&) [70]
+                0.00    0.00      45/574         wxStringBase::length() const [44]
+                0.00    0.00     514/574         wxStringBase::~wxStringBase() [20]
+[18]     0.0    0.00    0.00     574         wxStringBase::GetStringData() const [18]
+-----------------------------------------------
+                0.00    0.00      15/529         wxStringData::Lock() [71]
+                0.00    0.00     514/529         wxStringData::Unlock() [21]
+[19]     0.0    0.00    0.00     529         wxStringData::IsEmpty() const [19]
+-----------------------------------------------
+                0.00    0.00     514/514         wxString::~wxString() [22]
+[20]     0.0    0.00    0.00     514         wxStringBase::~wxStringBase() [20]
+                0.00    0.00     514/574         wxStringBase::GetStringData() const [18]
+                0.00    0.00     514/514         wxStringData::Unlock() [21]
+-----------------------------------------------
+                0.00    0.00     514/514         wxStringBase::~wxStringBase() [20]
+[21]     0.0    0.00    0.00     514         wxStringData::Unlock() [21]
+                0.00    0.00     514/529         wxStringData::IsEmpty() const [19]
+-----------------------------------------------
+                0.00    0.00       3/514         apo1Frame::OnButton1Click(wxCommandEvent&) [202]
+                0.00    0.00      30/514         wxString::Clear() [52]
+                0.00    0.00      30/514         wxString::operator<<(double) [55]
+                0.00    0.00      30/514         apo1Frame::OnButton2Click(wxCommandEvent&) [2]
+                0.00    0.00      31/514         apo1Frame::apo1Frame(wxWindow*, int) [113]
+                0.00    0.00     390/514         Image_show::Image_show(wxString, wxImage&, wxString, char, wxWindow*, int, wxPoint const&, wxSize const&) [1]
+[22]     0.0    0.00    0.00     514         wxString::~wxString() [22]
+                0.00    0.00     514/514         wxStringBase::~wxStringBase() [20]
+-----------------------------------------------
+                0.00    0.00     436/436         wxString::wxString(wchar_t const*) [24]
+[23]     0.0    0.00    0.00     436         wxStringBase::wxStringBase(wchar_t const*) [23]
+-----------------------------------------------
+                0.00    0.00      15/436         apo1Frame::OnButton2Click(wxCommandEvent&) [2]
+                0.00    0.00      30/436         wxString::Clear() [52]
+                0.00    0.00      31/436         apo1Frame::apo1Frame(wxWindow*, int) [113]
+                0.00    0.00     360/436         Image_show::Image_show(wxString, wxImage&, wxString, char, wxWindow*, int, wxPoint const&, wxSize const&) [1]
+[24]     0.0    0.00    0.00     436         wxString::wxString(wchar_t const*) [24]
+                0.00    0.00     436/436         wxStringBase::wxStringBase(wchar_t const*) [23]
+-----------------------------------------------
+                0.00    0.00       1/381         apo1Frame::apo1Frame(wxWindow*, int) [113]
+                0.00    0.00      60/381         Image_show::Image_show(wxString, wxImage&, wxString, char, wxWindow*, int, wxPoint const&, wxSize const&) [1]
+                0.00    0.00     128/381         wxWindowBase::GetMinSize() const [220]
+                0.00    0.00     192/381         wxWindowBase::GetMaxSize() const [219]
+[25]     0.0    0.00    0.00     381         wxSize::wxSize(int, int) [25]
+-----------------------------------------------
+                0.00    0.00      95/283         wxSizer::Add(wxSizer*, int, int, int, wxObject*) [32]
+                0.00    0.00     188/283         wxSizer::Add(wxWindow*, int, int, int, wxObject*) [29]
+[26]     0.0    0.00    0.00     283         wxSizer::Add(wxSizerItem*) [26]
+                0.00    0.00     283/283         wxListBase::GetCount() const [27]
+-----------------------------------------------
+                0.00    0.00     283/283         wxSizer::Add(wxSizerItem*) [26]
+[27]     0.0    0.00    0.00     283         wxListBase::GetCount() const [27]
+-----------------------------------------------
+                0.00    0.00     214/214         wxFrame::GetClientAreaOrigin() const [252]
+[28]     0.0    0.00    0.00     214         wxPoint::wxPoint(int, int) [28]
+-----------------------------------------------
+                0.00    0.00       8/188         apo1Frame::apo1Frame(wxWindow*, int) [113]
+                0.00    0.00     180/188         Image_show::Image_show(wxString, wxImage&, wxString, char, wxWindow*, int, wxPoint const&, wxSize const&) [1]
+[29]     0.0    0.00    0.00     188         wxSizer::Add(wxWindow*, int, int, int, wxObject*) [29]
+                0.00    0.00     188/283         wxSizer::Add(wxSizerItem*) [26]
+-----------------------------------------------
+                0.00    0.00      15/182         apo1Frame::OnButton2Click(wxCommandEvent&) [2]
+                0.00    0.00      17/182         apo1Frame::apo1Frame(wxWindow*, int) [113]
+                0.00    0.00     150/182         Image_show::Image_show(wxString, wxImage&, wxString, char, wxWindow*, int, wxPoint const&, wxSize const&) [1]
+[30]     0.0    0.00    0.00     182         wxGetTranslation(wchar_t const*, wchar_t const*) [30]
+-----------------------------------------------
+                0.00    0.00       2/146         wxListBase::wxListBase(wxKeyType) [88]
+                0.00    0.00      30/146         wxImage::wxImage() [51]
+                0.00    0.00      31/146         wxImage::wxImage() [46]
+                0.00    0.00      83/146         wxGDIObject::wxGDIObject() [34]
+[31]     0.0    0.00    0.00     146         wxObject::wxObject() [31]
+-----------------------------------------------
+                0.00    0.00       5/95          apo1Frame::apo1Frame(wxWindow*, int) [113]
+                0.00    0.00      90/95          Image_show::Image_show(wxString, wxImage&, wxString, char, wxWindow*, int, wxPoint const&, wxSize const&) [1]
+[32]     0.0    0.00    0.00      95         wxSizer::Add(wxSizer*, int, int, int, wxObject*) [32]
+                0.00    0.00      95/283         wxSizer::Add(wxSizerItem*) [26]
+-----------------------------------------------
+                0.00    0.00      30/90          wxStringBase::append(wxStringBase const&) [47]
+                0.00    0.00      60/90          wxStringBase::append(wchar_t const*) [38]
+[33]     0.0    0.00    0.00      90         wxStringBase::ConcatSelf(unsigned int, wchar_t const*) [33]
+-----------------------------------------------
+                0.00    0.00       2/83          wxPen::wxPen() [93]
+                0.00    0.00      81/83          wxBitmapBase::wxBitmapBase() [35]
+[34]     0.0    0.00    0.00      83         wxGDIObject::wxGDIObject() [34]
+                0.00    0.00      83/146         wxObject::wxObject() [31]
+-----------------------------------------------
+                0.00    0.00      81/81          wxBitmap::wxBitmap(wxImage const&, int) [36]
+[35]     0.0    0.00    0.00      81         wxBitmapBase::wxBitmapBase() [35]
+                0.00    0.00      81/83          wxGDIObject::wxGDIObject() [34]
+-----------------------------------------------
+                0.00    0.00       3/81          apo1Frame::OnButton1Click(wxCommandEvent&) [202]
+                0.00    0.00      30/81          Image_show::Image_show(wxString, wxImage&, wxString, char, wxWindow*, int, wxPoint const&, wxSize const&) [1]
+                0.00    0.00      48/81          hist::draw_histogram(wxStaticBitmap*, wxStaticBitmap*, wxStaticBitmap*) [48]
+[36]     0.0    0.00    0.00      81         wxBitmap::wxBitmap(wxImage const&, int) [36]
+                0.00    0.00      81/81          wxBitmapBase::wxBitmapBase() [35]
+-----------------------------------------------
+                0.00    0.00      60/60          wxStringBase::append(wchar_t const*) [38]
+[37]     0.0    0.00    0.00      60         wxStrlen(wchar_t const*) [37]
+-----------------------------------------------
+                0.00    0.00      60/60          wxString::append(wchar_t const*) [40]
+[38]     0.0    0.00    0.00      60         wxStringBase::append(wchar_t const*) [38]
+                0.00    0.00      60/60          wxStrlen(wchar_t const*) [37]
+                0.00    0.00      60/90          wxStringBase::ConcatSelf(unsigned int, wchar_t const*) [33]
+-----------------------------------------------
+                0.00    0.00      30/60          hist::scale(unsigned long) [49]
+                0.00    0.00      30/60          hist::hist(wxImage&) [4]
+[39]     0.0    0.00    0.00      60         data<unsigned long>::data(bool, unsigned long) [39]
+-----------------------------------------------
+                0.00    0.00      60/60          wxString::operator<<(wchar_t const*) [41]
+[40]     0.0    0.00    0.00      60         wxString::append(wchar_t const*) [40]
+                0.00    0.00      60/60          wxStringBase::append(wchar_t const*) [38]
+-----------------------------------------------
+                0.00    0.00      60/60          Image_show::Image_show(wxString, wxImage&, wxString, char, wxWindow*, int, wxPoint const&, wxSize const&) [1]
+[41]     0.0    0.00    0.00      60         wxString::operator<<(wchar_t const*) [41]
+                0.00    0.00      60/60          wxString::append(wchar_t const*) [40]
+-----------------------------------------------
+                0.00    0.00       3/48          wxImage::Rescale(int, int, int) [87]
+                0.00    0.00      15/48          Image_show::Image_show(wxString, wxImage&, wxString, char, wxWindow*, int, wxPoint const&, wxSize const&) [1]
+                0.00    0.00      30/48          Image_show::~Image_show() [120]
+[42]     0.0    0.00    0.00      48         wxImage::~wxImage() [42]
+                0.00    0.00      48/48          wxObject::~wxObject() [43]
+-----------------------------------------------
+                0.00    0.00      48/48          wxImage::~wxImage() [42]
+[43]     0.0    0.00    0.00      48         wxObject::~wxObject() [43]
+-----------------------------------------------
+                0.00    0.00      15/45          wxStringBase::empty() const [79]
+                0.00    0.00      30/45          wxStringBase::append(wxStringBase const&) [47]
+[44]     0.0    0.00    0.00      45         wxStringBase::length() const [44]
+                0.00    0.00      45/574         wxStringBase::GetStringData() const [18]
+-----------------------------------------------
+                0.00    0.00      42/42          hist::draw_histogram(wxStaticBitmap*, wxStaticBitmap*, wxStaticBitmap*) [48]
+[45]     0.0    0.00    0.00      42         wxWindowBase::Hide() [45]
+-----------------------------------------------
+                0.00    0.00       1/31          apo1Frame::apo1Frame(wxWindow*, int) [113]
+                0.00    0.00      30/31          Image_show::Image_show(wxString, wxImage&, wxString, char, wxWindow*, int, wxPoint const&, wxSize const&) [1]
+[46]     0.0    0.00    0.00      31         wxImage::wxImage() [46]
+                0.00    0.00      31/146         wxObject::wxObject() [31]
+-----------------------------------------------
+                0.00    0.00      30/30          wxString::append(wxString const&) [53]
+[47]     0.0    0.00    0.00      30         wxStringBase::append(wxStringBase const&) [47]
+                0.00    0.00      30/30          wxStringBase::c_str() const [56]
+                0.00    0.00      30/45          wxStringBase::length() const [44]
+                0.00    0.00      30/90          wxStringBase::ConcatSelf(unsigned int, wchar_t const*) [33]
+-----------------------------------------------
+                0.00    0.00      30/30          IMG::DrawHistogram(wxStaticBitmap*, wxStaticBitmap*, wxStaticBitmap*) [6]
+[48]     0.0    0.00    0.00      30         hist::draw_histogram(wxStaticBitmap*, wxStaticBitmap*, wxStaticBitmap*) [48]
+                0.00    0.00      48/81          wxBitmap::wxBitmap(wxImage const&, int) [36]
+                0.00    0.00      42/42          wxWindowBase::Hide() [45]
+-----------------------------------------------
+                0.00    0.00      30/30          hist::create_histogram_table(wxImage&) [3]
+[49]     0.0    0.00    0.00      30         hist::scale(unsigned long) [49]
+                0.00    0.00      30/30          hist::find_max() [50]
+                0.00    0.00      30/60          data<unsigned long>::data(bool, unsigned long) [39]
+-----------------------------------------------
+                0.00    0.00      30/30          hist::scale(unsigned long) [49]
+[50]     0.0    0.00    0.00      30         hist::find_max() [50]
+-----------------------------------------------
+                0.00    0.00      15/30          IMG::IMG(unsigned long, unsigned long) [75]
+                0.00    0.00      15/30          IMG::IMG(wxString) [7]
+[51]     0.0    0.00    0.00      30         wxImage::wxImage() [51]
+                0.00    0.00      30/146         wxObject::wxObject() [31]
+-----------------------------------------------
+                0.00    0.00      30/30          Image_show::Image_show(wxString, wxImage&, wxString, char, wxWindow*, int, wxPoint const&, wxSize const&) [1]
+[52]     0.0    0.00    0.00      30         wxString::Clear() [52]
+                0.00    0.00      30/436         wxString::wxString(wchar_t const*) [24]
+                0.00    0.00      30/514         wxString::~wxString() [22]
+-----------------------------------------------
+                0.00    0.00      30/30          wxString::operator<<(wxString const&) [54]
+[53]     0.0    0.00    0.00      30         wxString::append(wxString const&) [53]
+                0.00    0.00      30/30          wxStringBase::append(wxStringBase const&) [47]
+-----------------------------------------------
+                0.00    0.00      30/30          wxString::operator<<(double) [55]
+[54]     0.0    0.00    0.00      30         wxString::operator<<(wxString const&) [54]
+                0.00    0.00      30/30          wxString::append(wxString const&) [53]
+-----------------------------------------------
+                0.00    0.00      30/30          Image_show::Image_show(wxString, wxImage&, wxString, char, wxWindow*, int, wxPoint const&, wxSize const&) [1]
+[55]     0.0    0.00    0.00      30         wxString::operator<<(double) [55]
+                0.00    0.00      30/30          wxString::operator<<(wxString const&) [54]
+                0.00    0.00      30/514         wxString::~wxString() [22]
+-----------------------------------------------
+                0.00    0.00      30/30          wxStringBase::append(wxStringBase const&) [47]
+[56]     0.0    0.00    0.00      30         wxStringBase::c_str() const [56]
+-----------------------------------------------
+                0.00    0.00       4/26          IMG::HistogramEqualisation_2() [10]
+                0.00    0.00      10/26          IMG::HistogramEqualisation_3() [5]
+                0.00    0.00      12/26          IMG::HistogramEqualisation_1() [9]
+[57]     0.0    0.00    0.00      26         int* std::max_element<int*>(int*, int*) [57]
+-----------------------------------------------
+                0.00    0.00       5/20          apo1Frame::apo1Frame(wxWindow*, int) [113]
+                0.00    0.00      15/20          Image_show::Image_show(wxString, wxImage&, wxString, char, wxWindow*, int, wxPoint const&, wxSize const&) [1]
+[58]     0.0    0.00    0.00      20         wxEvtHandler::Connect(int, int, void (wxObject::*)(wxEvent&), wxObject*, wxEvtHandler*) [58]
+-----------------------------------------------
+                0.00    0.00      20/20          apo1Frame::OnButton2Click(wxCommandEvent&) [2]
+[59]     0.0    0.00    0.00      20         wxCheckBoxBase::IsChecked() const [59]
+-----------------------------------------------
+                0.00    0.00       3/18          wxImage::Rescale(int, int, int) [87]
+                0.00    0.00      15/18          Image_show::Image_show(wxString, wxImage&, wxString, char, wxWindow*, int, wxPoint const&, wxSize const&) [1]
+[60]     0.0    0.00    0.00      18         wxImage::operator=(wxImage const&) [60]
+                0.00    0.00      18/18          wxObject::operator=(wxObject const&) [61]
+-----------------------------------------------
+                0.00    0.00      18/18          wxImage::operator=(wxImage const&) [60]
+[61]     0.0    0.00    0.00      18         wxObject::operator=(wxObject const&) [61]
+-----------------------------------------------
+                0.00    0.00      17/17          wxButton::wxButton(wxWindow*, int, wxString const&, wxPoint const&, wxSize const&, long, wxValidator const&, wxString const&) [65]
+[62]     0.0    0.00    0.00      17         wxButtonBase::wxButtonBase() [62]
+-----------------------------------------------
+                0.00    0.00      17/17          wxStringBase::wxStringBase() [64]
+[63]     0.0    0.00    0.00      17         wxStringBase::Init() [63]
+-----------------------------------------------
+                0.00    0.00      17/17          wxString::wxString() [66]
+[64]     0.0    0.00    0.00      17         wxStringBase::wxStringBase() [64]
+                0.00    0.00      17/17          wxStringBase::Init() [63]
+-----------------------------------------------
+                0.00    0.00       2/17          apo1Frame::apo1Frame(wxWindow*, int) [113]
+                0.00    0.00      15/17          Image_show::Image_show(wxString, wxImage&, wxString, char, wxWindow*, int, wxPoint const&, wxSize const&) [1]
+[65]     0.0    0.00    0.00      17         wxButton::wxButton(wxWindow*, int, wxString const&, wxPoint const&, wxSize const&, long, wxValidator const&, wxString const&) [65]
+                0.00    0.00      17/17          wxButtonBase::wxButtonBase() [62]
+-----------------------------------------------
+                0.00    0.00       2/17          wxMenuBase::wxMenuBase(long) [90]
+                0.00    0.00      15/17          Image_show::Image_show(wxString, wxImage&, wxString, char, wxWindow*, int, wxPoint const&, wxSize const&) [1]
+[66]     0.0    0.00    0.00      17         wxString::wxString() [66]
+                0.00    0.00      17/17          wxStringBase::wxStringBase() [64]
+-----------------------------------------------
+                0.00    0.00       1/16          apo1Frame::apo1Frame(wxWindow*, int) [113]
+                0.00    0.00      15/16          Image_show::Image_show(wxString, wxImage&, wxString, char, wxWindow*, int, wxPoint const&, wxSize const&) [1]
+[67]     0.0    0.00    0.00      16         wxFrame::wxFrame() [67]
+-----------------------------------------------
+                0.00    0.00      16/16          wxWindowBase::SetName(wxString const&) [160]
+[68]     0.0    0.00    0.00      16         wxString::operator=(wxString const&) [68]
+-----------------------------------------------
+                0.00    0.00      15/15          IMG::IMG(wxString) [7]
+[69]     0.0    0.00    0.00      15         Dystrybuanta::Dystrybuanta(hist*) [69]
+                0.00    0.00      15/15          data<float>::data(bool, unsigned long) [76]
+-----------------------------------------------
+                0.00    0.00      15/15          wxString::wxString(wxString const&) [78]
+[70]     0.0    0.00    0.00      15         wxStringBase::wxStringBase(wxStringBase const&) [70]
+                0.00    0.00      15/15          wxStringBase::empty() const [79]
+                0.00    0.00      15/574         wxStringBase::GetStringData() const [18]
+                0.00    0.00      15/15          wxStringData::Lock() [71]
+-----------------------------------------------
+                0.00    0.00      15/15          wxStringBase::wxStringBase(wxStringBase const&) [70]
+[71]     0.0    0.00    0.00      15         wxStringData::Lock() [71]
+                0.00    0.00      15/529         wxStringData::IsEmpty() const [19]
+-----------------------------------------------
+                0.00    0.00      15/15          Image_show::Image_show(wxString, wxImage&, wxString, char, wxWindow*, int, wxPoint const&, wxSize const&) [1]
+[72]     0.0    0.00    0.00      15         wxScrolledWindow::wxScrolledWindow(wxWindow*, int, wxPoint const&, wxSize const&, long, wxString const&) [72]
+                0.00    0.00      15/15          wxPanel::wxPanel() [77]
+                0.00    0.00      15/15          wxScrollHelperNative::wxScrollHelperNative(wxWindow*) [73]
+-----------------------------------------------
+                0.00    0.00      15/15          wxScrolledWindow::wxScrolledWindow(wxWindow*, int, wxPoint const&, wxSize const&, long, wxString const&) [72]
+[73]     0.0    0.00    0.00      15         wxScrollHelperNative::wxScrollHelperNative(wxWindow*) [73]
+-----------------------------------------------
+                0.00    0.00      15/15          IMG::IMG(wxString) [7]
+[74]     0.0    0.00    0.00      15         IMG::oblicz_srednia_histogramu() [74]
+-----------------------------------------------
+                0.00    0.00       2/15          IMG::HistogramEqualisation_2() [10]
+                0.00    0.00       4/15          IMG::HistogramEqualisation_1() [9]
+                0.00    0.00       4/15          IMG::HistogramEqualisation_wlasna() [8]
+                0.00    0.00       5/15          IMG::HistogramEqualisation_3() [5]
+[75]     0.0    0.00    0.00      15         IMG::IMG(unsigned long, unsigned long) [75]
+                0.00    0.00      15/30          wxImage::wxImage() [51]
+-----------------------------------------------
+                0.00    0.00      15/15          Dystrybuanta::Dystrybuanta(hist*) [69]
+[76]     0.0    0.00    0.00      15         data<float>::data(bool, unsigned long) [76]
+-----------------------------------------------
+                0.00    0.00      15/15          wxScrolledWindow::wxScrolledWindow(wxWindow*, int, wxPoint const&, wxSize const&, long, wxString const&) [72]
+[77]     0.0    0.00    0.00      15         wxPanel::wxPanel() [77]
+-----------------------------------------------
+                0.00    0.00      15/15          Image_show::Image_show(wxString, wxImage&, wxString, char, wxWindow*, int, wxPoint const&, wxSize const&) [1]
+[78]     0.0    0.00    0.00      15         wxString::wxString(wxString const&) [78]
+                0.00    0.00      15/15          wxStringBase::wxStringBase(wxStringBase const&) [70]
+-----------------------------------------------
+                0.00    0.00      15/15          wxStringBase::wxStringBase(wxStringBase const&) [70]
+[79]     0.0    0.00    0.00      15         wxStringBase::empty() const [79]
+                0.00    0.00      15/45          wxStringBase::length() const [44]
+-----------------------------------------------
+                0.00    0.00       4/4           apo1Frame::apo1Frame(wxWindow*, int) [113]
+[80]     0.0    0.00    0.00       4         wxCheckBox::wxCheckBox(wxWindow*, int, wxString const&, wxPoint const&, wxSize const&, long, wxValidator const&, wxString const&) [80]
+                0.00    0.00       4/4           wxCheckBoxBase::wxCheckBoxBase() [81]
+-----------------------------------------------
+                0.00    0.00       4/4           wxCheckBox::wxCheckBox(wxWindow*, int, wxString const&, wxPoint const&, wxSize const&, long, wxValidator const&, wxString const&) [80]
+[81]     0.0    0.00    0.00       4         wxCheckBoxBase::wxCheckBoxBase() [81]
+-----------------------------------------------
+                0.00    0.00       4/4           IMG::HistogramEqualisation_wlasna() [8]
+[82]     0.0    0.00    0.00       4         IMG::CalculateLUT(char) [82]
+                0.00    0.00       4/4           LUT::LUT(Dystrybuanta*, char) [83]
+-----------------------------------------------
+                0.00    0.00       4/4           IMG::CalculateLUT(char) [82]
+[83]     0.0    0.00    0.00       4         LUT::LUT(Dystrybuanta*, char) [83]
+                0.00    0.00       4/4           data<unsigned char>::data(bool, unsigned long) [84]
+-----------------------------------------------
+                0.00    0.00       4/4           LUT::LUT(Dystrybuanta*, char) [83]
+[84]     0.0    0.00    0.00       4         data<unsigned char>::data(bool, unsigned long) [84]
+-----------------------------------------------
+                0.00    0.00       1/3           __static_initialization_and_destruction_0(int, int) [100]
+                0.00    0.00       1/3           __static_initialization_and_destruction_0(int, int) [101]
+                0.00    0.00       1/3           __static_initialization_and_destruction_0(int, int) [103]
+[85]     0.0    0.00    0.00       3         wxEventTableEntry::wxEventTableEntry(int const&, int, int, void (wxObject::*)(wxEvent&), wxObject*) [85]
+                0.00    0.00       3/3           wxEventTableEntryBase::wxEventTableEntryBase(int, int, void (wxObject::*)(wxEvent&), wxObject*) [86]
+-----------------------------------------------
+                0.00    0.00       3/3           wxEventTableEntry::wxEventTableEntry(int const&, int, int, void (wxObject::*)(wxEvent&), wxObject*) [85]
+[86]     0.0    0.00    0.00       3         wxEventTableEntryBase::wxEventTableEntryBase(int, int, void (wxObject::*)(wxEvent&), wxObject*) [86]
+-----------------------------------------------
+                0.00    0.00       3/3           apo1Frame::OnButton1Click(wxCommandEvent&) [202]
+[87]     0.0    0.00    0.00       3         wxImage::Rescale(int, int, int) [87]
+                0.00    0.00       3/18          wxImage::operator=(wxImage const&) [60]
+                0.00    0.00       3/48          wxImage::~wxImage() [42]
+-----------------------------------------------
+                0.00    0.00       2/2           wxMenuItemList::wxMenuItemList(wxKeyType) [91]
+[88]     0.0    0.00    0.00       2         wxListBase::wxListBase(wxKeyType) [88]
+                0.00    0.00       2/146         wxObject::wxObject() [31]
+-----------------------------------------------
+                0.00    0.00       2/2           apo1Frame::apo1Frame(wxWindow*, int) [113]
+[89]     0.0    0.00    0.00       2         wxMenuBase::Append(wxMenuItem*) [89]
+-----------------------------------------------
+                0.00    0.00       2/2           wxMenu::wxMenu(long) [94]
+[90]     0.0    0.00    0.00       2         wxMenuBase::wxMenuBase(long) [90]
+                0.00    0.00       2/17          wxString::wxString() [66]
+                0.00    0.00       2/2           wxMenuItemList::wxMenuItemList(wxKeyType) [91]
+-----------------------------------------------
+                0.00    0.00       2/2           wxMenuBase::wxMenuBase(long) [90]
+[91]     0.0    0.00    0.00       2         wxMenuItemList::wxMenuItemList(wxKeyType) [91]
+                0.00    0.00       2/2           wxListBase::wxListBase(wxKeyType) [88]
+-----------------------------------------------
+                0.00    0.00       2/2           wxMenuItemList::CreateNode(wxNodeBase*, wxNodeBase*, void*, wxListKey const&) [168]
+[92]     0.0    0.00    0.00       2         wxwxMenuItemListNode::wxwxMenuItemListNode(wxListBase*, wxwxMenuItemListNode*, wxwxMenuItemListNode*, wxMenuItem*, wxListKey const&) [92]
+-----------------------------------------------
+                0.00    0.00       2/2           wxStatusBar::wxStatusBar(wxWindow*, int, long, wxString const&) [106]
+[93]     0.0    0.00    0.00       2         wxPen::wxPen() [93]
+                0.00    0.00       2/83          wxGDIObject::wxGDIObject() [34]
+-----------------------------------------------
+                0.00    0.00       2/2           apo1Frame::apo1Frame(wxWindow*, int) [113]
+[94]     0.0    0.00    0.00       2         wxMenu::wxMenu(long) [94]
+                0.00    0.00       2/2           wxMenuBase::wxMenuBase(long) [90]
+-----------------------------------------------
+                0.00    0.00       1/1           __do_global_ctors_aux [263]
+[95]     0.0    0.00    0.00       1         global constructors keyed to _Z11wxCreateAppv [95]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [102]
+-----------------------------------------------
+                0.00    0.00       1/1           __do_global_ctors_aux [263]
+[96]     0.0    0.00    0.00       1         global constructors keyed to _Z11wxbuildinfo17wxbuildinfoformat [96]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [103]
+-----------------------------------------------
+                0.00    0.00       1/1           __do_global_ctors_aux [263]
+[97]     0.0    0.00    0.00       1         global constructors keyed to _ZN10Image_show16ID_STATICBITMAP5E [97]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [101]
+-----------------------------------------------
+                0.00    0.00       1/1           __do_global_ctors_aux [263]
+[98]     0.0    0.00    0.00       1         global constructors keyed to _ZN4hist8find_maxEv [98]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [104]
+-----------------------------------------------
+                0.00    0.00       1/1           __do_global_ctors_aux [263]
+[99]     0.0    0.00    0.00       1         global constructors keyed to _ZN9DEBUG_lut16ID_STATICBITMAP1E [99]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [100]
+-----------------------------------------------
+                0.00    0.00       1/1           global constructors keyed to _ZN9DEBUG_lut16ID_STATICBITMAP1E [99]
+[100]    0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [100]
+                0.00    0.00       1/3           wxEventTableEntry::wxEventTableEntry(int const&, int, int, void (wxObject::*)(wxEvent&), wxObject*) [85]
+-----------------------------------------------
+                0.00    0.00       1/1           global constructors keyed to _ZN10Image_show16ID_STATICBITMAP5E [97]
+[101]    0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [101]
+                0.00    0.00       1/3           wxEventTableEntry::wxEventTableEntry(int const&, int, int, void (wxObject::*)(wxEvent&), wxObject*) [85]
+-----------------------------------------------
+                0.00    0.00       1/1           global constructors keyed to _Z11wxCreateAppv [95]
+[102]    0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [102]
+                0.00    0.00       1/1           wxAppInitializer::wxAppInitializer(wxAppConsole* (*)()) [109]
+-----------------------------------------------
+                0.00    0.00       1/1           global constructors keyed to _Z11wxbuildinfo17wxbuildinfoformat [96]
+[103]    0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [103]
+                0.00    0.00       1/3           wxEventTableEntry::wxEventTableEntry(int const&, int, int, void (wxObject::*)(wxEvent&), wxObject*) [85]
+-----------------------------------------------
+                0.00    0.00       1/1           global constructors keyed to _ZN4hist8find_maxEv [98]
+[104]    0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [104]
+-----------------------------------------------
+                0.00    0.00       1/1           wxStatusBar::wxStatusBar(wxWindow*, int, long, wxString const&) [106]
+[105]    0.0    0.00    0.00       1         wxArrayInt::wxArrayInt() [105]
+-----------------------------------------------
+                0.00    0.00       1/1           apo1Frame::apo1Frame(wxWindow*, int) [113]
+[106]    0.0    0.00    0.00       1         wxStatusBar::wxStatusBar(wxWindow*, int, long, wxString const&) [106]
+                0.00    0.00       2/2           wxPen::wxPen() [93]
+                0.00    0.00       1/1           wxArrayString::wxArrayString() [108]
+                0.00    0.00       1/1           wxArrayInt::wxArrayInt() [105]
+-----------------------------------------------
+                0.00    0.00       1/1           wxAppInitializer::wxAppInitializer(wxAppConsole* (*)()) [109]
+[107]    0.0    0.00    0.00       1         wxAppConsole::SetInitializerFunction(wxAppConsole* (*)()) [107]
+-----------------------------------------------
+                0.00    0.00       1/1           wxStatusBar::wxStatusBar(wxWindow*, int, long, wxString const&) [106]
+[108]    0.0    0.00    0.00       1         wxArrayString::wxArrayString() [108]
+-----------------------------------------------
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [102]
+[109]    0.0    0.00    0.00       1         wxAppInitializer::wxAppInitializer(wxAppConsole* (*)()) [109]
+                0.00    0.00       1/1           wxAppConsole::SetInitializerFunction(wxAppConsole* (*)()) [107]
+-----------------------------------------------
+                0.00    0.00       1/1           wxAppConsole::CallOnInit() [129]
+[110]    0.0    0.00    0.00       1         apo1App::OnInit() [110]
+                0.00    0.00       1/1           apo1Frame::apo1Frame(wxWindow*, int) [113]
+                0.00    0.00       1/1           wxAppBase::SetTopWindow(wxWindow*) [114]
+-----------------------------------------------
+                0.00    0.00       1/1           wxCreateApp() [115]
+[111]    0.0    0.00    0.00       1         apo1App::apo1App() [111]
+-----------------------------------------------
+                0.00    0.00       1/1           apo1Frame::apo1Frame(wxWindow*, int) [113]
+[112]    0.0    0.00    0.00       1         wxPanel::wxPanel(wxWindow*, int, wxPoint const&, wxSize const&, long, wxString const&) [112]
+-----------------------------------------------
+                0.00    0.00       1/1           apo1App::OnInit() [110]
+[113]    0.0    0.00    0.00       1         apo1Frame::apo1Frame(wxWindow*, int) [113]
+                0.00    0.00      31/436         wxString::wxString(wchar_t const*) [24]
+                0.00    0.00      31/514         wxString::~wxString() [22]
+                0.00    0.00      17/182         wxGetTranslation(wchar_t const*, wchar_t const*) [30]
+                0.00    0.00       8/188         wxSizer::Add(wxWindow*, int, int, int, wxObject*) [29]
+                0.00    0.00       5/95          wxSizer::Add(wxSizer*, int, int, int, wxObject*) [32]
+                0.00    0.00       5/20          wxEvtHandler::Connect(int, int, void (wxObject::*)(wxEvent&), wxObject*, wxEvtHandler*) [58]
+                0.00    0.00       4/4           wxCheckBox::wxCheckBox(wxWindow*, int, wxString const&, wxPoint const&, wxSize const&, long, wxValidator const&, wxString const&) [80]
+                0.00    0.00       2/17          wxButton::wxButton(wxWindow*, int, wxString const&, wxPoint const&, wxSize const&, long, wxValidator const&, wxString const&) [65]
+                0.00    0.00       2/2           wxMenu::wxMenu(long) [94]
+                0.00    0.00       2/2           wxMenuBase::Append(wxMenuItem*) [89]
+                0.00    0.00       1/16          wxFrame::wxFrame() [67]
+                0.00    0.00       1/31          wxImage::wxImage() [46]
+                0.00    0.00       1/1           wxPanel::wxPanel(wxWindow*, int, wxPoint const&, wxSize const&, long, wxString const&) [112]
+                0.00    0.00       1/381         wxSize::wxSize(int, int) [25]
+                0.00    0.00       1/1           wxStatusBar::wxStatusBar(wxWindow*, int, long, wxString const&) [106]
+-----------------------------------------------
+                0.00    0.00       1/1           apo1App::OnInit() [110]
+[114]    0.0    0.00    0.00       1         wxAppBase::SetTopWindow(wxWindow*) [114]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+
+Index by function name
+
+  [95] global constructors keyed to _Z11wxCreateAppv (apo1App.cpp) [45] wxWindowBase::Hide() [51] wxImage::wxImage()
+  [96] global constructors keyed to _Z11wxbuildinfo17wxbuildinfoformat (apo1Main.cpp) [108] wxArrayString::wxArrayString() [42] wxImage::~wxImage()
+  [97] global constructors keyed to _ZN10Image_show16ID_STATICBITMAP5E (Image_show.cpp) [81] wxCheckBoxBase::wxCheckBoxBase() [60] wxImage::operator=(wxImage const&)
+  [98] global constructors keyed to _ZN4hist8find_maxEv (apo_lib.cpp) [91] wxMenuItemList::wxMenuItemList(wxKeyType) [112] wxPanel::wxPanel(wxWindow*, int, wxPoint const&, wxSize const&, long, wxString const&)
+  [99] global constructors keyed to _ZN9DEBUG_lut16ID_STATICBITMAP1E (DEBUG_lut.cpp) [109] wxAppInitializer::wxAppInitializer(wxAppConsole* (*)()) [77] wxPanel::wxPanel()
+  [30] wxGetTranslation(wchar_t const*, wchar_t const*) [72] wxScrolledWindow::wxScrolledWindow(wxWindow*, int, wxPoint const&, wxSize const&, long, wxString const&) [28] wxPoint::wxPoint(int, int)
+ [100] __static_initialization_and_destruction_0(int, int) (DEBUG_lut.cpp) [85] wxEventTableEntry::wxEventTableEntry(int const&, int, int, void (wxObject::*)(wxEvent&), wxObject*) [26] wxSizer::Add(wxSizerItem*)
+ [101] __static_initialization_and_destruction_0(int, int) (Image_show.cpp) [73] wxScrollHelperNative::wxScrollHelperNative(wxWindow*) [29] wxSizer::Add(wxWindow*, int, int, int, wxObject*)
+ [102] __static_initialization_and_destruction_0(int, int) (apo1App.cpp) [92] wxwxMenuItemListNode::wxwxMenuItemListNode(wxListBase*, wxwxMenuItemListNode*, wxwxMenuItemListNode*, wxMenuItem*, wxListKey const&) [32] wxSizer::Add(wxSizer*, int, int, int, wxObject*)
+ [103] __static_initialization_and_destruction_0(int, int) (apo1Main.cpp) [86] wxEventTableEntryBase::wxEventTableEntryBase(int, int, void (wxObject::*)(wxEvent&), wxObject*) [36] wxBitmap::wxBitmap(wxImage const&, int)
+ [104] __static_initialization_and_destruction_0(int, int) (apo_lib.cpp) [82] IMG::CalculateLUT(char) [65] wxButton::wxButton(wxWindow*, int, wxString const&, wxPoint const&, wxSize const&, long, wxValidator const&, wxString const&)
+  [37] wxStrlen(wchar_t const*) [6] IMG::DrawHistogram(wxStaticBitmap*, wxStaticBitmap*, wxStaticBitmap*) [31] wxObject::wxObject()
+   [1] Image_show::Image_show(wxString, wxImage&, wxString, char, wxWindow*, int, wxPoint const&, wxSize const&) [9] IMG::HistogramEqualisation_1() [43] wxObject::~wxObject()
+ [105] wxArrayInt::wxArrayInt() [10] IMG::HistogramEqualisation_2() [61] wxObject::operator=(wxObject const&)
+  [80] wxCheckBox::wxCheckBox(wxWindow*, int, wxString const&, wxPoint const&, wxSize const&, long, wxValidator const&, wxString const&) [5] IMG::HistogramEqualisation_3() [52] wxString::Clear()
+  [88] wxListBase::wxListBase(wxKeyType) [74] IMG::oblicz_srednia_histogramu() [40] wxString::append(wchar_t const*)
+  [89] wxMenuBase::Append(wxMenuItem*) [8] IMG::HistogramEqualisation_wlasna() [53] wxString::append(wxString const&)
+  [90] wxMenuBase::wxMenuBase(long) [7] IMG::IMG(wxString) [24] wxString::wxString(wchar_t const*)
+  [34] wxGDIObject::wxGDIObject() [75] IMG::IMG(unsigned long, unsigned long) [78] wxString::wxString(wxString const&)
+ [106] wxStatusBar::wxStatusBar(wxWindow*, int, long, wxString const&) [83] LUT::LUT(Dystrybuanta*, char) [66] wxString::wxString()
+  [69] Dystrybuanta::Dystrybuanta(hist*) [76] data<float>::data(bool, unsigned long) [22] wxString::~wxString()
+ [107] wxAppConsole::SetInitializerFunction(wxAppConsole* (*)()) [84] data<unsigned char>::data(bool, unsigned long) [68] wxString::operator=(wxString const&)
+  [35] wxBitmapBase::wxBitmapBase() [39] data<unsigned long>::data(bool, unsigned long) [41] wxString::operator<<(wchar_t const*)
+  [62] wxButtonBase::wxButtonBase() [48] hist::draw_histogram(wxStaticBitmap*, wxStaticBitmap*, wxStaticBitmap*) [54] wxString::operator<<(wxString const&)
+  [58] wxEvtHandler::Connect(int, int, void (wxObject::*)(wxEvent&), wxObject*, wxEvtHandler*) [3] hist::create_histogram_table(wxImage&) [55] wxString::operator<<(double)
+  [33] wxStringBase::ConcatSelf(unsigned int, wchar_t const*) [49] hist::scale(unsigned long) [113] apo1Frame::apo1Frame(wxWindow*, int)
+  [63] wxStringBase::Init()   [50] hist::find_max()      [114] wxAppBase::SetTopWindow(wxWindow*)
+  [38] wxStringBase::append(wchar_t const*) [4] hist::hist(wxImage&) [27] wxListBase::GetCount() const
+  [47] wxStringBase::append(wxStringBase const&) [93] wxPen::wxPen() [18] wxStringBase::GetStringData() const
+  [23] wxStringBase::wxStringBase(wchar_t const*) [94] wxMenu::wxMenu(long) [56] wxStringBase::c_str() const
+  [70] wxStringBase::wxStringBase(wxStringBase const&) [25] wxSize::wxSize(int, int) [79] wxStringBase::empty() const
+  [64] wxStringBase::wxStringBase() [110] apo1App::OnInit() [44] wxStringBase::length() const
+  [20] wxStringBase::~wxStringBase() [111] apo1App::apo1App() [19] wxStringData::IsEmpty() const
+  [71] wxStringData::Lock()   [67] wxFrame::wxFrame()     [59] wxCheckBoxBase::IsChecked() const
+  [21] wxStringData::Unlock() [87] wxImage::Rescale(int, int, int) [57] int* std::max_element<int*>(int*, int*)
+  [11] wxWindowBase::GetValidator() [46] wxImage::wxImage()
