@@ -48,6 +48,9 @@ class apo1Frame: public wxFrame
         static const long ID_CHECKBOX2;
         static const long ID_CHECKBOX4;
         static const long ID_CHECKBOX3;
+        static const long ID_CHECKBOX5;
+        static const long ID_CHECKBOX6;
+        static const long ID_CHECKBOX7;
         static const long ID_BUTTON2;
         static const long ID_PANEL1;
         static const long idMenuQuit;
@@ -56,9 +59,12 @@ class apo1Frame: public wxFrame
         //*)
 
         //(*Declarations(apo1Frame)
+        wxCheckBox* zad6;
         wxCheckBox* metoda2;
+        wxCheckBox* zad5;
         wxStaticBitmap* podglad;
         wxButton* Button1;
+        wxCheckBox* zad3;
         wxCheckBox* wlasna;
         wxPanel* Panel1;
         wxFileDialog* FileDialog1;

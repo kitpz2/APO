@@ -796,86 +796,127 @@ IMG* IMG::FiltracjaGoroprzepustowa(int *nmaska, bool wyostrzanie)
         }
         cout<<endl;
     }
-    IMG *nowy=new IMG(GetWidth(), GetHeight());
-    int r,g,b, tempr, tempg, tempb, maxr=0, maxg=0, maxb=0;
-    int **obrazr=new int*[GetWidth()];
-    int **obrazg=new int*[GetWidth()];
-    int **obrazb=new int*[GetWidth()];
-    for (int i=0;i<GetWidth();++i)
+    IMG *nowy=new IMG(GetWidth(), GetHeight());//Stworzenie obrazu do którego zapiszemy wynik
+    int r,g,b, tempr, tempg, tempb, maxr=0, maxg=0, maxb=0;//Zmienne pomocnicze
+    if(histogram==NULL)
+        histogram=new hist(*this);
+    if (histogram->greyscale)//Czy obraz jest czarnobiały?
     {
-        obrazr[i]=new int[GetHeight()];
-        obrazg[i]=new int[GetHeight()];
-        obrazb[i]=new int[GetHeight()];
-        for (int j=0;j<GetHeight();++j)
+        int **obraz=new int*[GetWidth()];//Tworzymy tablice przechowującą tymczasowo pixele
+        for (int i=0;i<GetWidth();++i)//Lecimy po obrazie
         {
-            if (i!=0 && i!=GetWidth()-1 && j!=0 && j!=GetHeight()-1)
+            obraz[i]=new int[GetHeight()];
+            for (int j=0;j<GetHeight();++j)//Pixel po pixelu
             {
-                obrazr[i][j]=(GetRed(i-1,j-1)*maska[0][0])+(GetRed(i,j-1)*maska[1][0])+(GetRed(i+1,j-1)*maska[2][0])+(GetRed(i-1,j)*maska[0][1])+(GetRed(i,j)*maska[1][1])+(GetRed(i+1,j)*maska[2][1])+(GetRed(i-1,j+1)*maska[0][2])+(GetRed(i,j+1)*maska[1][2])+(GetRed(i+1,j+1)*maska[2][2]);
-
-                obrazg[i][j]=(GetGreen(i-1,j-1)*maska[0][0])+(GetGreen(i,j-1)*maska[1][0])+(GetGreen(i+1,j-1)*maska[2][0])+(GetGreen(i-1,j)*maska[0][1])+(GetGreen(i,j)*maska[1][1])+(GetGreen(i+1,j)*maska[2][1])+(GetGreen(i-1,j+1)*maska[0][2])+(GetGreen(i,j+1)*maska[1][2])+(GetGreen(i+1,j+1)*maska[2][2]);
-                obrazb[i][j]=(GetBlue(i-1,j-1)*maska[0][0])+(GetBlue(i,j-1)*maska[1][0])+(GetBlue(i+1,j-1)*maska[2][0])+(GetBlue(i-1,j)*maska[0][1])+(GetBlue(i,j)*maska[1][1])+(GetBlue(i+1,j)*maska[2][1])+(GetBlue(i-1,j+1)*maska[0][2])+(GetBlue(i,j+1)*maska[1][2])+(GetBlue(i+1,j+1)*maska[2][2]);
-
-                if (obrazr[i][j]<0)
-                    obrazr[i][j]=0;
-                if (obrazg[i][j]<0)
-                    obrazg[i][j]=0;
-                if (obrazb[i][j]<0)
-                    obrazb[i][j]=0;
-
-                if (obrazr[i][j]>maxr)
+                if (i!=0 && i!=GetWidth()-1 && j!=0 && j!=GetHeight()-1)//Jeżeli nie jesteśmy na krawędzi obrazu
                 {
-                    maxr=obrazr[i][j];
+                    //Zastosowanie maski
+                    obraz[i][j]=(GetRed(i-1,j-1)*maska[0][0])+(GetRed(i,j-1)*maska[1][0])+(GetRed(i+1,j-1)*maska[2][0])+
+                                (GetRed(i-1,j)*maska[0][1])+(GetRed(i,j)*maska[1][1])+(GetRed(i+1,j)*maska[2][1])+
+                                (GetRed(i-1,j+1)*maska[0][2])+(GetRed(i,j+1)*maska[1][2])+(GetRed(i+1,j+1)*maska[2][2]);
+
+                    if (wyostrzanie==true)//Jeżeli robimy wyostrzanie
+                    {
+                        obraz[i][j]+=GetRed(i,j);//To nakladamy wykryte krawedzie na obraz oryginalny aby go wyostrzyc
+                    }
+                    if (obraz[i][j]<0)//Jeżeli jakiś pixel spadł poniżej zera to ustawiamy go na zero
+                        obraz[i][j]=0;
+
+
+                    if (obraz[i][j]>maxr)//Wyszukiwanie maxa
+                        maxr=obraz[i][j];
                 }
-                if (obrazg[i][j]>maxg)
+                else
                 {
-                    maxg=obrazg[i][j];
-                }
-                if (obrazb[i][j]>maxb)
-                {
-                    maxb=obrazb[i][j];
+                    obraz[i][j]=GetRed(i,j);//Wrzucenie pixela do tymczaowej tablicy
                 }
             }
-            else
+        }
+
+        for (int i=0;i<GetWidth();++i)
+        {
+            for (int j=0;j<GetHeight();++j)
             {
-                obrazr[i][j]=GetRed(i,j);
-                obrazg[i][j]=GetGreen(i,j);
-                obrazb[i][j]=GetBlue(i,j);
+                if (i!=0 && i!=GetWidth()-1 && j!=0 && j!=GetHeight()-1)
+                {
+                    obraz[i][j]= int(double(obraz[i][j]) / double(maxr) * 255);//Ustawiamy pixele w obrazie
+                    nowy->SetRGB(i,j,obraz[i][j],obraz[i][j],obraz[i][j]);
+                }
             }
         }
     }
-    //fstream plik;
-    //plik.open("bla");
-    //if(!plik.is_open())
-    //    cout<<"PLIK NIE OTWARTY";
-
-    printf("maxr=%d maxg=%d maxb=%d\n",maxr, maxg, maxb);
-    for (int i=0;i<GetWidth();++i)
+    else
     {
-        for (int j=0;j<GetHeight();++j)
+        int **obrazr=new int*[GetWidth()];
+        int **obrazg=new int*[GetWidth()];
+        int **obrazb=new int*[GetWidth()];
+        for (int i=0;i<GetWidth();++i)
         {
-            if (i!=0 && i!=GetWidth()-1 && j!=0 && j!=GetHeight()-1)
+            obrazr[i]=new int[GetHeight()];
+            obrazg[i]=new int[GetHeight()];
+            obrazb[i]=new int[GetHeight()];
+            for (int j=0;j<GetHeight();++j)
             {
-                if (wyostrzanie==true)
+                if (i!=0 && i!=GetWidth()-1 && j!=0 && j!=GetHeight()-1)
                 {
-                    obrazr[i][j]+=GetRed(i,j);
-                    obrazg[i][j]+=GetGreen(i,j);
-                    obrazb[i][j]+=GetBlue(i,j);
+                    obrazr[i][j]=(GetRed(i-1,j-1)*maska[0][0])+(GetRed(i,j-1)*maska[1][0])+(GetRed(i+1,j-1)*maska[2][0])+(GetRed(i-1,j)*maska[0][1])+(GetRed(i,j)*maska[1][1])+(GetRed(i+1,j)*maska[2][1])+(GetRed(i-1,j+1)*maska[0][2])+(GetRed(i,j+1)*maska[1][2])+(GetRed(i+1,j+1)*maska[2][2]);
+
+                    obrazg[i][j]=(GetGreen(i-1,j-1)*maska[0][0])+(GetGreen(i,j-1)*maska[1][0])+(GetGreen(i+1,j-1)*maska[2][0])+(GetGreen(i-1,j)*maska[0][1])+(GetGreen(i,j)*maska[1][1])+(GetGreen(i+1,j)*maska[2][1])+(GetGreen(i-1,j+1)*maska[0][2])+(GetGreen(i,j+1)*maska[1][2])+(GetGreen(i+1,j+1)*maska[2][2]);
+                    obrazb[i][j]=(GetBlue(i-1,j-1)*maska[0][0])+(GetBlue(i,j-1)*maska[1][0])+(GetBlue(i+1,j-1)*maska[2][0])+(GetBlue(i-1,j)*maska[0][1])+(GetBlue(i,j)*maska[1][1])+(GetBlue(i+1,j)*maska[2][1])+(GetBlue(i-1,j+1)*maska[0][2])+(GetBlue(i,j+1)*maska[1][2])+(GetBlue(i+1,j+1)*maska[2][2]);
+                    if (wyostrzanie==true)
+                    {
+                        obrazr[i][j]+=GetRed(i,j);
+                        obrazg[i][j]+=GetGreen(i,j);
+                        obrazb[i][j]+=GetBlue(i,j);
+                    }
+                    if (obrazr[i][j]<0)
+                        obrazr[i][j]=0;
+                    if (obrazg[i][j]<0)
+                        obrazg[i][j]=0;
+                    if (obrazb[i][j]<0)
+                        obrazb[i][j]=0;
+
+                    if (obrazr[i][j]>maxr)
+                    {
+                        maxr=obrazr[i][j];
+                    }
+                    if (obrazg[i][j]>maxg)
+                    {
+                        maxg=obrazg[i][j];
+                    }
+                    if (obrazb[i][j]>maxb)
+                    {
+                        maxb=obrazb[i][j];
+                    }
                 }
-                obrazr[i][j]= int(double(obrazr[i][j]) / double(maxr) * 255);
-                obrazg[i][j]= int(double(obrazg[i][j]) / double(maxg) * 255);
-                obrazb[i][j]= int(double(obrazb[i][j]) / double(maxb) * 255);
-                nowy->SetRGB(i,j,obrazr[i][j],obrazg[i][j],obrazb[i][j]);
+                else
+                {
+                    obrazr[i][j]=GetRed(i,j);
+                    obrazg[i][j]=GetGreen(i,j);
+                    obrazb[i][j]=GetBlue(i,j);
+                }
             }
-            //delete [] obrazr[i];
-            //delete [] obrazg[i];
-            //delete [] obrazb[i];
         }
-        //delete [] obrazr;
-        //delete [] obrazg;
-        //delete [] obrazb;
-        //plik<<endl;
+        for (int i=0;i<GetWidth();++i)
+        {
+            for (int j=0;j<GetHeight();++j)
+            {
+                if (i!=0 && i!=GetWidth()-1 && j!=0 && j!=GetHeight()-1)
+                {
+                    obrazr[i][j]= int(double(obrazr[i][j]) / double(maxr) * 255);
+                    obrazg[i][j]= int(double(obrazg[i][j]) / double(maxg) * 255);
+                    obrazb[i][j]= int(double(obrazb[i][j]) / double(maxb) * 255);
+                    nowy->SetRGB(i,j,obrazr[i][j],obrazg[i][j],obrazb[i][j]);
+                }
+            }
+        }
     }
     return nowy;
+
+}
+
+IMG *IMG::PoprawaCiaglosciLiniiBrzegowej()
+{
 
 }
 

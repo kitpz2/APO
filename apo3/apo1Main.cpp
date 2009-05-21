@@ -53,6 +53,9 @@ const long apo1Frame::ID_CHECKBOX1 = wxNewId();
 const long apo1Frame::ID_CHECKBOX2 = wxNewId();
 const long apo1Frame::ID_CHECKBOX4 = wxNewId();
 const long apo1Frame::ID_CHECKBOX3 = wxNewId();
+const long apo1Frame::ID_CHECKBOX5 = wxNewId();
+const long apo1Frame::ID_CHECKBOX6 = wxNewId();
+const long apo1Frame::ID_CHECKBOX7 = wxNewId();
 const long apo1Frame::ID_BUTTON2 = wxNewId();
 const long apo1Frame::ID_PANEL1 = wxNewId();
 const long apo1Frame::idMenuQuit = wxNewId();
@@ -71,6 +74,7 @@ apo1Frame::apo1Frame(wxWindow* parent,wxWindowID id)
     wxStaticBoxSizer* StaticBoxSizer2;
     wxMenuItem* MenuItem2;
     wxStaticBoxSizer* StaticBoxSizer4;
+    wxFlexGridSizer* FlexGridSizer3;
     wxMenuItem* MenuItem1;
     wxFlexGridSizer* FlexGridSizer2;
     wxMenu* Menu1;
@@ -113,6 +117,17 @@ apo1Frame::apo1Frame(wxWindow* parent,wxWindowID id)
     GridSizer1->Add(wlasna, 1, wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     StaticBoxSizer4->Add(GridSizer1, 1, wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     StaticBoxSizer2->Add(StaticBoxSizer4, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
+    FlexGridSizer3 = new wxFlexGridSizer(0, 1, 0, 0);
+    zad3 = new wxCheckBox(Panel1, ID_CHECKBOX5, _("Zadanie 3 maska 5x5"), wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("ID_CHECKBOX5"));
+    zad3->SetValue(false);
+    FlexGridSizer3->Add(zad3, 1, wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL, 5);
+    zad5 = new wxCheckBox(Panel1, ID_CHECKBOX6, _("Poprawa ciągłości linii brzegowej"), wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("ID_CHECKBOX6"));
+    zad5->SetValue(false);
+    FlexGridSizer3->Add(zad5, 1, wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL, 5);
+    zad6 = new wxCheckBox(Panel1, ID_CHECKBOX7, _("Szkielet"), wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("ID_CHECKBOX7"));
+    zad6->SetValue(false);
+    FlexGridSizer3->Add(zad6, 1, wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL, 5);
+    StaticBoxSizer2->Add(FlexGridSizer3, 1, wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     FlexGridSizer1->Add(StaticBoxSizer2, 1, wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     StaticBoxSizer3 = new wxStaticBoxSizer(wxHORIZONTAL, Panel1, _("Krok 3"));
     Button2 = new wxButton(Panel1, ID_BUTTON2, _("Wykonaj operacje"), wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("ID_BUTTON2"));
@@ -222,17 +237,32 @@ void apo1Frame::OnButton2Click(wxCommandEvent& event)
         if (metoda2->IsChecked())
         {
             fprintf(stderr,"(%s-%d)M2->",__FILE__,__LINE__);
-            Image_show *okno=new Image_show(FileDialog1->GetPath(), obraz, _("Sposób 2"),2);
+            Image_show *okno=new Image_show(FileDialog1->GetPath(), obraz, _("Wyostrzanie 2"),2);
             okno->Show();
         }
         if (metoda3->IsChecked())
         {
-            Image_show *okno=new Image_show(FileDialog1->GetPath(), obraz, _("Sposób 3"),3);
+            Image_show *okno=new Image_show(FileDialog1->GetPath(), obraz, _("Detekcja Krawędzi 1"),3);
             okno->Show();
         }
         if (wlasna->IsChecked())
         {
-            Image_show *okno=new Image_show(FileDialog1->GetPath(), obraz, _("Sposób własny"),4);
+            Image_show *okno=new Image_show(FileDialog1->GetPath(), obraz, _("Detekcja Krawędzi 2"),4);
+            okno->Show();
+        }
+        if (zad3->IsChecked())
+        {
+            Image_show *okno=new Image_show(FileDialog1->GetPath(), obraz, _("Operacja liniowa sąsiedztwa oparta na masce 5x5 utworzonej na podstawie dwóch masek 3x3 "),5);
+            okno->Show();
+        }
+        if (zad5->IsChecked())
+        {
+            Image_show *okno=new Image_show(FileDialog1->GetPath(), obraz, _("Operacja analizy otoczenia"),6);
+            okno->Show();
+        }
+        if (zad6->IsChecked())
+        {
+            Image_show *okno=new Image_show(FileDialog1->GetPath(), obraz, _("Szkielet"),7);
             okno->Show();
         }
     }

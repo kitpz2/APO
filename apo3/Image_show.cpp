@@ -174,7 +174,26 @@ Image_show::Image_show(wxString sciezka, wxImage &obraz, wxString window_name, c
 
         obrazek_po=obrazek->FiltracjaGoroprzepustowa(tab, false);
     }
-    else
+    else if(metoda==4)
+    {
+        int tab[9]={0,-1,0,-1,4,-1,0,-1,0};
+
+        obrazek_po=obrazek->FiltracjaGoroprzepustowa(tab, false);
+    }
+    else if(metoda==5)
+    {
+        int tab[9]={1,1,1,1,1,1,1,1,1};
+        obrazek_po=obrazek->FiltracjaGoroprzepustowa(tab, true);
+        int tab2[9]={1,0,1,0,9,0,1,0,1};
+        obrazek_po=obrazek_po->FiltracjaGoroprzepustowa(tab2, true);
+    }
+    else if(metoda==6)
+    {
+        int tab[9]={1,1,1,1,1,1,1,1,1};
+
+        obrazek_po=obrazek->FiltracjaGoroprzepustowa(tab, false);
+    }
+    else if(metoda==7)
     {
         int tab[9]={0,-1,0,-1,4,-1,0,-1,0};
 

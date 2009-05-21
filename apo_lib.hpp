@@ -105,6 +105,7 @@ public:
     IMG *Negacja();
     IMG *Progowanie();
 
+    IMG *PoprawaCiaglosciLiniiBrzegowej();
     IMG* FiltracjaGoroprzepustowa(int *nmaska, bool wyostrzanie);
 };
 #endif
